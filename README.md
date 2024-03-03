@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-# EV_Charging
-EV_Charging
-=======
-<<<<<<< HEAD
-# EV_Charging
-EV_Charging
-=======
 # An Incentive-based Scheduling Algorithm for Balancing Multiple Charging Stations (平衡多充電站間的充電排程獎勵演算法)
 
 ## File Structure
@@ -73,6 +65,5 @@ EV_Charging
 
 ## Document
 大部分說明都在程式中，有一些額外資料集紀錄在 [Notion](https://www.notion.so/0908-766b18d7d2c34a89b7759ea5efb98894)
->>>>>>> b1cb8ba (initial commit)
 >>>>>>> a3f82da (initial commit)
 # New_EV_WORK
