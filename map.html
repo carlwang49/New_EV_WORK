@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b959634899a486627f4bc95a3f651655 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b959634899a486627f4bc95a3f651655" ></div>
+        
+</body>
+<script>    
+    
+            var map_b959634899a486627f4bc95a3f651655 = L.map(
+                "map_b959634899a486627f4bc95a3f651655",
+                {
+                    center: [56.47484364114399, -2.990229730364671],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_64ae7b168b29072863d85e76da04dab4 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b959634899a486627f4bc95a3f651655);
+        
+    
+            var feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a = L.featureGroup(
+                {}
+            ).addTo(map_b959634899a486627f4bc95a3f651655);
+        
+    
+            var marker_fc42e57d22ca7fff01d107461fb8af15 = L.marker(
+                [56.48838239, -3.014352526],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_215230279741663d1fb9fc8529fc408c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_fc42e57d22ca7fff01d107461fb8af15.setIcon(icon_215230279741663d1fb9fc8529fc408c);
+        
+    
+        var popup_1568950b3a3e0faad25ab5540547a518 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ebe2b6eeaddd8877d041c525ada8bff = $(`<div id="html_0ebe2b6eeaddd8877d041c525ada8bff" style="width: 100.0%; height: 100.0%;">Ardler Complex</div>`)[0];
+            popup_1568950b3a3e0faad25ab5540547a518.setContent(html_0ebe2b6eeaddd8877d041c525ada8bff);
+        
+
+        marker_fc42e57d22ca7fff01d107461fb8af15.bindPopup(popup_1568950b3a3e0faad25ab5540547a518)
+        ;
+
+        
+    
+    
+            var marker_c890b911556b8f686fb0be17bd09843b = L.marker(
+                [56.46779037, -2.873580046],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_2dc160542bdeec5fcf742b1559409a89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_c890b911556b8f686fb0be17bd09843b.setIcon(icon_2dc160542bdeec5fcf742b1559409a89);
+        
+    
+        var popup_a1473495979ee606f37bbc4f2e2734ed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2027cf1ebcc92220eb6fda26d9df0996 = $(`<div id="html_2027cf1ebcc92220eb6fda26d9df0996" style="width: 100.0%; height: 100.0%;">Queen Street Car Park</div>`)[0];
+            popup_a1473495979ee606f37bbc4f2e2734ed.setContent(html_2027cf1ebcc92220eb6fda26d9df0996);
+        
+
+        marker_c890b911556b8f686fb0be17bd09843b.bindPopup(popup_a1473495979ee606f37bbc4f2e2734ed)
+        ;
+
+        
+    
+    
+            var marker_d185ea5f44c3a69ffa67d4cd65e7129c = L.marker(
+                [56.4821483, -3.024697396],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_29bc2d45f80bc8ae130ff1144bd9a72f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d185ea5f44c3a69ffa67d4cd65e7129c.setIcon(icon_29bc2d45f80bc8ae130ff1144bd9a72f);
+        
+    
+        var popup_89451dd099cf94a63103c42ab73d8b43 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6be261b3e322c29aede3bd1c286a98c6 = $(`<div id="html_6be261b3e322c29aede3bd1c286a98c6" style="width: 100.0%; height: 100.0%;">Dundee Ice Arena</div>`)[0];
+            popup_89451dd099cf94a63103c42ab73d8b43.setContent(html_6be261b3e322c29aede3bd1c286a98c6);
+        
+
+        marker_d185ea5f44c3a69ffa67d4cd65e7129c.bindPopup(popup_89451dd099cf94a63103c42ab73d8b43)
+        ;
+
+        
+    
+    
+            var marker_c5756340602935dcc3041611fb38ead9 = L.marker(
+                [56.47016332, -2.920663615],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_4ceba8215083bfcab0f9127ef9f3315f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-arrow", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_c5756340602935dcc3041611fb38ead9.setIcon(icon_4ceba8215083bfcab0f9127ef9f3315f);
+        
+    
+        var popup_47859af7985e8d07c8271373654b2cc7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5629d6eb2e0b143ee595e40c348b6d33 = $(`<div id="html_5629d6eb2e0b143ee595e40c348b6d33" style="width: 100.0%; height: 100.0%;">Brington Place Sheltered Housing</div>`)[0];
+            popup_47859af7985e8d07c8271373654b2cc7.setContent(html_5629d6eb2e0b143ee595e40c348b6d33);
+        
+
+        marker_c5756340602935dcc3041611fb38ead9.bindPopup(popup_47859af7985e8d07c8271373654b2cc7)
+        ;
+
+        
+    
+    
+            var marker_a695ffb0a0fc366149724b0dc0e83e14 = L.marker(
+                [56.46011217, -2.975759533],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_f462083e0957f0d59fee2c580a61a2d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_a695ffb0a0fc366149724b0dc0e83e14.setIcon(icon_f462083e0957f0d59fee2c580a61a2d9);
+        
+    
+        var popup_e7c2619134e87bcad5cdcb2825f6b561 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c41784c8868f1fec8950c48d3f1db84a = $(`<div id="html_c41784c8868f1fec8950c48d3f1db84a" style="width: 100.0%; height: 100.0%;">Dundee House</div>`)[0];
+            popup_e7c2619134e87bcad5cdcb2825f6b561.setContent(html_c41784c8868f1fec8950c48d3f1db84a);
+        
+
+        marker_a695ffb0a0fc366149724b0dc0e83e14.bindPopup(popup_e7c2619134e87bcad5cdcb2825f6b561)
+        ;
+
+        
+    
+    
+            var marker_e309beb4361f0bfdac9b50ed241fbcd2 = L.marker(
+                [56.48222221, -2.935811882],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_2e066b706911b588ca98e87709e64ccf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-arrow", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_e309beb4361f0bfdac9b50ed241fbcd2.setIcon(icon_2e066b706911b588ca98e87709e64ccf);
+        
+    
+        var popup_4f176a4e2ac8d1a0ca46a29f9e069576 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86179ff2d8baff1f6e52b7d465d27028 = $(`<div id="html_86179ff2d8baff1f6e52b7d465d27028" style="width: 100.0%; height: 100.0%;">Dundee East District Housing Office</div>`)[0];
+            popup_4f176a4e2ac8d1a0ca46a29f9e069576.setContent(html_86179ff2d8baff1f6e52b7d465d27028);
+        
+
+        marker_e309beb4361f0bfdac9b50ed241fbcd2.bindPopup(popup_4f176a4e2ac8d1a0ca46a29f9e069576)
+        ;
+
+        
+    
+    
+            var marker_a5de51c64b6a04d4b4fcda0cff7111ad = L.marker(
+                [56.46016446, -2.975911151],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_21317e489e3f4fe44c2ee3aa750e2974 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_a5de51c64b6a04d4b4fcda0cff7111ad.setIcon(icon_21317e489e3f4fe44c2ee3aa750e2974);
+        
+    
+        var popup_3e71e8bf4f73b384b037aa9739de66c6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60520b9d80af55f3bd49d328db524cee = $(`<div id="html_60520b9d80af55f3bd49d328db524cee" style="width: 100.0%; height: 100.0%;">Dundee House</div>`)[0];
+            popup_3e71e8bf4f73b384b037aa9739de66c6.setContent(html_60520b9d80af55f3bd49d328db524cee);
+        
+
+        marker_a5de51c64b6a04d4b4fcda0cff7111ad.bindPopup(popup_3e71e8bf4f73b384b037aa9739de66c6)
+        ;
+
+        
+    
+    
+            var marker_59f027711c449a16197c28932c42ae53 = L.marker(
+                [56.48972199, -2.91751567],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_3106088a1dcf2e31395560269c21d20f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-arrow", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_59f027711c449a16197c28932c42ae53.setIcon(icon_3106088a1dcf2e31395560269c21d20f);
+        
+    
+        var popup_cb5614662530e9897c91999e885de947 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bbcf4b0e458ba296013afd19cc545b48 = $(`<div id="html_bbcf4b0e458ba296013afd19cc545b48" style="width: 100.0%; height: 100.0%;">Whitfield Centre</div>`)[0];
+            popup_cb5614662530e9897c91999e885de947.setContent(html_bbcf4b0e458ba296013afd19cc545b48);
+        
+
+        marker_59f027711c449a16197c28932c42ae53.bindPopup(popup_cb5614662530e9897c91999e885de947)
+        ;
+
+        
+    
+    
+            var marker_0724eb7125f9a9fa6ecf5879e6a4e3ce = L.marker(
+                [56.46154133, -2.966638618],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_e09912c05028ece415774d05c58fcca6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_0724eb7125f9a9fa6ecf5879e6a4e3ce.setIcon(icon_e09912c05028ece415774d05c58fcca6);
+        
+    
+        var popup_95b4291b456196f34745b2391b8f5ab4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e50bb0cd8613514f713a3f78a9adfb49 = $(`<div id="html_e50bb0cd8613514f713a3f78a9adfb49" style="width: 100.0%; height: 100.0%;">Gellatly Street Car Park</div>`)[0];
+            popup_95b4291b456196f34745b2391b8f5ab4.setContent(html_e50bb0cd8613514f713a3f78a9adfb49);
+        
+
+        marker_0724eb7125f9a9fa6ecf5879e6a4e3ce.bindPopup(popup_95b4291b456196f34745b2391b8f5ab4)
+        ;
+
+        
+    
+    
+            var marker_67baf7d33e12bd625d2e8ca1733dee0b = L.marker(
+                [56.45672603, -2.973511103],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_6af8977e2bd39bedb11cfd28be842fef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_67baf7d33e12bd625d2e8ca1733dee0b.setIcon(icon_6af8977e2bd39bedb11cfd28be842fef);
+        
+    
+        var popup_e30a780001be95d9a018603d0b6453a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70d77f44f82c2f06decef06ced075500 = $(`<div id="html_70d77f44f82c2f06decef06ced075500" style="width: 100.0%; height: 100.0%;">Greenmarket Car Park</div>`)[0];
+            popup_e30a780001be95d9a018603d0b6453a0.setContent(html_70d77f44f82c2f06decef06ced075500);
+        
+
+        marker_67baf7d33e12bd625d2e8ca1733dee0b.bindPopup(popup_e30a780001be95d9a018603d0b6453a0)
+        ;
+
+        
+    
+    
+            var marker_ec93f2758f84ac5d911ca7fbf155d3ed = L.marker(
+                [56.46005394, -2.975607762],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_d81a779fa809903cde7c396e7bf43ade = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ec93f2758f84ac5d911ca7fbf155d3ed.setIcon(icon_d81a779fa809903cde7c396e7bf43ade);
+        
+    
+        var popup_73d44bd65f8658dd0ddaeff64d4cbd32 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb0d1cbdf1f8e6004a883fef02030c34 = $(`<div id="html_eb0d1cbdf1f8e6004a883fef02030c34" style="width: 100.0%; height: 100.0%;">Dundee House</div>`)[0];
+            popup_73d44bd65f8658dd0ddaeff64d4cbd32.setContent(html_eb0d1cbdf1f8e6004a883fef02030c34);
+        
+
+        marker_ec93f2758f84ac5d911ca7fbf155d3ed.bindPopup(popup_73d44bd65f8658dd0ddaeff64d4cbd32)
+        ;
+
+        
+    
+    
+            var marker_fbcb651aa8c5f676434a01002a28c62c = L.marker(
+                [56.45907815, -2.977267895],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_208889ca26fae2d8290c8ed1b0046048 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_fbcb651aa8c5f676434a01002a28c62c.setIcon(icon_208889ca26fae2d8290c8ed1b0046048);
+        
+    
+        var popup_c0ce16c3e42898c9cb0f4b7e36adf8c2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1d6faa7f368ec14de7f583b04aae42a = $(`<div id="html_e1d6faa7f368ec14de7f583b04aae42a" style="width: 100.0%; height: 100.0%;">South Tay Street</div>`)[0];
+            popup_c0ce16c3e42898c9cb0f4b7e36adf8c2.setContent(html_e1d6faa7f368ec14de7f583b04aae42a);
+        
+
+        marker_fbcb651aa8c5f676434a01002a28c62c.bindPopup(popup_c0ce16c3e42898c9cb0f4b7e36adf8c2)
+        ;
+
+        
+    
+    
+            var marker_f748322a847ff400a3353fef2b722787 = L.marker(
+                [56.47296831, -3.002456461],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_8b0d2a11532f27ce787ca71a48a6ba91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-arrow", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_f748322a847ff400a3353fef2b722787.setIcon(icon_8b0d2a11532f27ce787ca71a48a6ba91);
+        
+    
+        var popup_9ed82d5e91618c6fba2cadc3339ea715 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d242153618e71a0cf1397f964e5516e = $(`<div id="html_0d242153618e71a0cf1397f964e5516e" style="width: 100.0%; height: 100.0%;">Marchbanks</div>`)[0];
+            popup_9ed82d5e91618c6fba2cadc3339ea715.setContent(html_0d242153618e71a0cf1397f964e5516e);
+        
+
+        marker_f748322a847ff400a3353fef2b722787.bindPopup(popup_9ed82d5e91618c6fba2cadc3339ea715)
+        ;
+
+        
+    
+    
+            var marker_88a307ed88bdd082e67fef60d09628f2 = L.marker(
+                [56.46548131, -3.035287],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_157099409a0acc6373fe06d6c4adbac1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-arrow", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_88a307ed88bdd082e67fef60d09628f2.setIcon(icon_157099409a0acc6373fe06d6c4adbac1);
+        
+    
+        var popup_9058e883bb1c9f86a1ad5dc7527e70e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7dda82275311b7571e02d645ebdf9d24 = $(`<div id="html_7dda82275311b7571e02d645ebdf9d24" style="width: 100.0%; height: 100.0%;">Menziehill House</div>`)[0];
+            popup_9058e883bb1c9f86a1ad5dc7527e70e9.setContent(html_7dda82275311b7571e02d645ebdf9d24);
+        
+
+        marker_88a307ed88bdd082e67fef60d09628f2.bindPopup(popup_9058e883bb1c9f86a1ad5dc7527e70e9)
+        ;
+
+        
+    
+    
+            var marker_c0e2d5a2fc67b682668c264c1033d108 = L.marker(
+                [56.46394318, -2.992652763],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_1ff341ce46f20e9dd170093cdf4ab7c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_c0e2d5a2fc67b682668c264c1033d108.setIcon(icon_1ff341ce46f20e9dd170093cdf4ab7c3);
+        
+    
+        var popup_b53d57c6f13088db19f841a399e14494 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59d39bfbc607cbd6e7bb7e5bd1e870a0 = $(`<div id="html_59d39bfbc607cbd6e7bb7e5bd1e870a0" style="width: 100.0%; height: 100.0%;">Mitchell Street Centre</div>`)[0];
+            popup_b53d57c6f13088db19f841a399e14494.setContent(html_59d39bfbc607cbd6e7bb7e5bd1e870a0);
+        
+
+        marker_c0e2d5a2fc67b682668c264c1033d108.bindPopup(popup_b53d57c6f13088db19f841a399e14494)
+        ;
+
+        
+    
+    
+            var marker_f569318bf828173772c010ee6e5ed2d3 = L.marker(
+                [56.46355616, -2.962498196],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_06126ee52250c07331a653df27f8e10f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "location-arrow", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_f569318bf828173772c010ee6e5ed2d3.setIcon(icon_06126ee52250c07331a653df27f8e10f);
+        
+    
+        var popup_81e428afc126f4cfd5a60cf065d704b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bcee9fe448fff78a9fd11b9d04733614 = $(`<div id="html_bcee9fe448fff78a9fd11b9d04733614" style="width: 100.0%; height: 100.0%;">Olympia Multi-Storey Car Park</div>`)[0];
+            popup_81e428afc126f4cfd5a60cf065d704b4.setContent(html_bcee9fe448fff78a9fd11b9d04733614);
+        
+
+        marker_f569318bf828173772c010ee6e5ed2d3.bindPopup(popup_81e428afc126f4cfd5a60cf065d704b4)
+        ;
+
+        
+    
+    
+            var marker_7c00076fff5a5e09634101408e5d3898 = L.marker(
+                [56.49601845, -2.947257247],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_9001ccb5083ca3452b5580a205a90c45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_7c00076fff5a5e09634101408e5d3898.setIcon(icon_9001ccb5083ca3452b5580a205a90c45);
+        
+    
+        var popup_ae401d08381c9d2f5cb653c61ca8bae7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3f660604621d4ccb522c2f0a6c92316 = $(`<div id="html_c3f660604621d4ccb522c2f0a6c92316" style="width: 100.0%; height: 100.0%;">Social Work Building</div>`)[0];
+            popup_ae401d08381c9d2f5cb653c61ca8bae7.setContent(html_c3f660604621d4ccb522c2f0a6c92316);
+        
+
+        marker_7c00076fff5a5e09634101408e5d3898.bindPopup(popup_ae401d08381c9d2f5cb653c61ca8bae7)
+        ;
+
+        
+    
+    
+            var marker_22fa51114d75eb7cb4f8c7351b10d8ba = L.marker(
+                [56.49601598, -2.94747589],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_18e8959cddcc395dc133382f09f6e867 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_22fa51114d75eb7cb4f8c7351b10d8ba.setIcon(icon_18e8959cddcc395dc133382f09f6e867);
+        
+    
+        var popup_ef55e97f59513f4a26be627632da2995 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e249da7c3bb8df0da3e817338cc21c91 = $(`<div id="html_e249da7c3bb8df0da3e817338cc21c91" style="width: 100.0%; height: 100.0%;">Social Work Building</div>`)[0];
+            popup_ef55e97f59513f4a26be627632da2995.setContent(html_e249da7c3bb8df0da3e817338cc21c91);
+        
+
+        marker_22fa51114d75eb7cb4f8c7351b10d8ba.bindPopup(popup_ef55e97f59513f4a26be627632da2995)
+        ;
+
+        
+    
+    
+            var marker_7e997ae2427165b3acdaa8ff3462b7d5 = L.marker(
+                [56.46777532, -2.873360882],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_0e4348adbea73038066aec12ee3583e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_7e997ae2427165b3acdaa8ff3462b7d5.setIcon(icon_0e4348adbea73038066aec12ee3583e9);
+        
+    
+        var popup_7828cf6892f024c0b6a9ee1450cdeb9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56d1a3694a6ce525954a0ccfe1020545 = $(`<div id="html_56d1a3694a6ce525954a0ccfe1020545" style="width: 100.0%; height: 100.0%;">Queen Street Car Park</div>`)[0];
+            popup_7828cf6892f024c0b6a9ee1450cdeb9b.setContent(html_56d1a3694a6ce525954a0ccfe1020545);
+        
+
+        marker_7e997ae2427165b3acdaa8ff3462b7d5.bindPopup(popup_7828cf6892f024c0b6a9ee1450cdeb9b)
+        ;
+
+        
+    
+    
+            var marker_d2dae51b780975f2f503129f373a0722 = L.marker(
+                [56.47327245, -3.011614616],
+                {}
+            ).addTo(feature_group_3050ee34684a1eb1e2d9c17c2ebedd8a);
+        
+    
+            var icon_9a2a6874573dc255a53adeb8c6de1e5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_d2dae51b780975f2f503129f373a0722.setIcon(icon_9a2a6874573dc255a53adeb8c6de1e5a);
+        
+    
+        var popup_2dfc53e12d3ad20ef118596f9f8b9afe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e42492f0c111925ff62296778c41115b = $(`<div id="html_e42492f0c111925ff62296778c41115b" style="width: 100.0%; height: 100.0%;">Housing Office West, Dundee</div>`)[0];
+            popup_2dfc53e12d3ad20ef118596f9f8b9afe.setContent(html_e42492f0c111925ff62296778c41115b);
+        
+
+        marker_d2dae51b780975f2f503129f373a0722.bindPopup(popup_2dfc53e12d3ad20ef118596f9f8b9afe)
+        ;
+
+        
+    
+</script>

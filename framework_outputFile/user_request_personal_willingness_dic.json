@@ -1,0 +1,3676 @@
+{
+    "('2018-07-01 00:00:00', 3.0, '604738H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.5564285721114444,
+                "threshold": 0.0763471368254744,
+                "personal": 0.5566813363342996,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 1,
+                "score": 0.6694958839102022,
+                "threshold": 0.0188471992302548,
+                "personal": 0.5613416880836063,
+                "willingness": 1.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.0,
+                "threshold": -0.0,
+                "personal": 0.4567655112310197,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 03:00:00', 1.0, '605432')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.2915371443991023,
+                "threshold": 0.0248876262824121,
+                "personal": 0.2102054959250653,
+                "willingness": 0.472962365831397
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 10,
+                "score": 0.5125440461467439,
+                "threshold": 0.0586726870304963,
+                "personal": 0.1790234782216614,
+                "willingness": 0.8503615215528921
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.2479458305477124,
+                "threshold": 0.0980432255166317,
+                "personal": 0.1111457934193431,
+                "willingness": 0.250078035193522
+            }
+        ]
+    },
+    "('2018-07-01 04:00:00', 2.0, '605432')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.2969388856362985,
+                "threshold": 0.0,
+                "personal": 0.2295974590142451,
+                "willingness": 0.5165942827820516
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.3275884319920706,
+                "threshold": 0.0619636358249735,
+                "personal": 0.1148847454266119,
+                "willingness": 0.4882601680631007
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.4725328990112965,
+                "threshold": 0.0,
+                "personal": 0.4765769413885589,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 04:00:00', 3.0, '607289')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.2767130402308283,
+                "threshold": 0.0194545225390813,
+                "personal": 0.1925626713662636,
+                "willingness": 0.4332660105740932
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.3858210185926953,
+                "threshold": 0.0298450391332169,
+                "personal": 0.1778573637507585,
+                "willingness": 0.7558937959407237
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.1594732078675815,
+                "threshold": 1.1524612293701249,
+                "personal": 0.4108762675315879,
+                "willingness": 0.9244716019460728
+            }
+        ]
+    },
+    "('2018-07-01 07:00:00', 2.0, '518475')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3607976161061271,
+                "threshold": 0.0274624475966928,
+                "personal": 0.1870212672422927,
+                "willingness": 0.4207978512951587
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.2739130434782608,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 10,
+                "score": 0.228125,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.687704309621447,
+                "threshold": 0.013852655821301,
+                "personal": 0.158258258856848,
+                "willingness": 0.7517267295700281
+            }
+        ]
+    },
+    "('2018-07-01 07:00:00', 1.0, '606789')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3801936658143742,
+                "threshold": 0.0074077787248699,
+                "personal": 0.2091207490213192,
+                "willingness": 0.4705216852979683
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 2,
+                "score": 0.3516324938039106,
+                "threshold": 0.0872110366824581,
+                "personal": 0.1603396260852237,
+                "willingness": 0.60929057912385
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.8350036160593817,
+                "threshold": 0.0493441560732815,
+                "personal": 0.2219697577190819,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 08:00:00', 1.0, '601555')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3192005274879109,
+                "threshold": 0.006444692293639,
+                "personal": 0.1852611502906431,
+                "willingness": 0.416837588153947
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.1388849455060147,
+                "threshold": 0.2645617737190228,
+                "personal": 0.0747665473978752,
+                "willingness": 0.1682247316452193
+            }
+        ]
+    },
+    "('2018-07-01 09:00:00', 2.0, '605077H')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.3510144927536232,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 10,
+                "score": 0.4468404633730996,
+                "threshold": -0.0014205741011747,
+                "personal": 0.1895826832857693,
+                "willingness": 0.9005177456074042
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 3,
+                "score": 0.4821894718074369,
+                "threshold": 0.1034433083654138,
+                "personal": 0.1390832402184089,
+                "willingness": 0.591103770928238
+            }
+        ]
+    },
+    "('2018-07-01 09:00:00', 1.0, '601085')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.373999114082186,
+                "threshold": 0.0,
+                "personal": 0.2338887603745238,
+                "willingness": 0.5262497108426787
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 6,
+                "score": 0.4087415174336818,
+                "threshold": 0.1415834903751986,
+                "personal": 0.1646038114967431,
+                "willingness": 0.77528395214966
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 3,
+                "score": 0.5399310965204368,
+                "threshold": 0.2228608404555945,
+                "personal": 0.1726683650890869,
+                "willingness": 0.7338405516286193
+            }
+        ]
+    },
+    "('2018-07-01 09:00:00', 1.0, '606102')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3474455311819848,
+                "threshold": 0.0224001312872733,
+                "personal": 0.2231742049930556,
+                "willingness": 0.502141961234375
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.6877789597163473,
+                "threshold": 0.0122993956375458,
+                "personal": 0.1299544198038146,
+                "willingness": 0.6172834940681194
+            }
+        ]
+    },
+    "('2018-07-01 09:00:00', 2.0, '604899H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.6065954037031089,
+                "threshold": 0.0347899751529195,
+                "personal": 0.460379345717029,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 3,
+                "score": 0.39541318361015,
+                "threshold": 0.1004681645113775,
+                "personal": 0.6141118588743256,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.7614636991455319,
+                "threshold": 0.0,
+                "personal": 0.4827784191855588,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 09:00:00', 3.0, '606941')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.2985176601895234,
+                "threshold": 0.0337078174668558,
+                "personal": 0.1493380196714429,
+                "willingness": 0.3360105442607467
+            },
+            {
+                "incentive": 1,
+                "score": 0.2913870740553776,
+                "threshold": 0.0077084570073199,
+                "personal": 0.204657168922424,
+                "willingness": 0.4604786300754541
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.4935231836478087,
+                "threshold": 0.0851323578904132,
+                "personal": 0.1477577312386034,
+                "willingness": 0.6279703577640644
+            },
+            {
+                "incentive": 4,
+                "score": 0.4299106867578615,
+                "threshold": 0.101671263136254,
+                "personal": 0.2221062835403182,
+                "willingness": 1.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 10,
+                "score": 0.5127845489304322,
+                "threshold": 0.3749838062295179,
+                "personal": 0.1646897504704558,
+                "willingness": 0.7822763147346652
+            },
+            {
+                "incentive": 10,
+                "score": 0.5126677957667188,
+                "threshold": 0.4183191086778617,
+                "personal": 0.1493380196714429,
+                "willingness": 0.7093555934393542
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.6183175476098319,
+                "threshold": 0.0260957736711939,
+                "personal": 0.2261777775109116,
+                "willingness": 1.0
+            },
+            {
+                "incentive": 10,
+                "score": 0.5169112679815019,
+                "threshold": 0.0,
+                "personal": 0.1240938074907345,
+                "willingness": 0.5894455855809893
+            }
+        ]
+    },
+    "('2018-07-01 09:00:00', 2.0, '606941')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.2941153227032197,
+                "threshold": 0.0045026662076586,
+                "personal": 0.2511636719678056,
+                "willingness": 0.5651182619275628
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 5,
+                "score": 0.6822298413909328,
+                "threshold": 0.0101671263136254,
+                "personal": 0.2617631519560414,
+                "willingness": 1.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.5091945437361453,
+                "threshold": 0.0206396234775096,
+                "personal": 0.1123230886242733,
+                "willingness": 0.5335346709652984
+            }
+        ]
+    },
+    "('2018-07-01 09:00:00', 1.0, '606620')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.247,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 1,
+                "score": 0.1273811951431514,
+                "threshold": -0.1998745677954804,
+                "personal": 0.1230054279817609,
+                "willingness": 0.2767622129589621
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.4876135663915255,
+                "threshold": 0.0,
+                "personal": 0.1661522739961051,
+                "willingness": 0.7892233014814993
+            }
+        ]
+    },
+    "('2018-07-01 10:00:00', 2.0, '604773H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.5263663471012221,
+                "threshold": 0.0517825371881861,
+                "personal": 0.3848321914867476,
+                "willingness": 0.8658724308451822
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 2,
+                "score": 0.5828238332981981,
+                "threshold": 0.0,
+                "personal": 0.4284299376602638,
+                "willingness": 1.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 3,
+                "score": 0.4286918883512767,
+                "threshold": 0.033292191444863,
+                "personal": 0.3247270857178461,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.1836478699497203,
+                "threshold": 0.0,
+                "personal": 0.4990289375987988,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 10:00:00', 1.0, '604897H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.5892892330059213,
+                "threshold": 0.0155762908763378,
+                "personal": 0.4410087505597436,
+                "willingness": 0.9922696887594232
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 1,
+                "score": 0.515411421756948,
+                "threshold": 0.007159353376055,
+                "personal": 0.2812825274861251,
+                "willingness": 0.6328856868437814
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 2,
+                "score": 0.1728773839002459,
+                "threshold": 0.0,
+                "personal": 0.3175597885688338,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3889686032725594,
+                "threshold": 0.5734254281943161,
+                "personal": 0.3151528852989903,
+                "willingness": 0.7090939919227283
+            }
+        ]
+    },
+    "('2018-07-01 10:00:00', 2.0, '600108')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.5879992999568726,
+                "threshold": 0.0161347668988826,
+                "personal": 0.4127992129463778,
+                "willingness": 0.9287982291293502
+            },
+            {
+                "incentive": 1,
+                "score": 0.5774675928738753,
+                "threshold": 0.0,
+                "personal": 0.383844857000543,
+                "willingness": 0.8636509282512219
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            },
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            },
+            {
+                "incentive": 10,
+                "score": 0.1125,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.8913201411138394,
+                "threshold": 0.0163336753951363,
+                "personal": 0.4023486968871868,
+                "willingness": 1.0
+            },
+            {
+                "incentive": 10,
+                "score": 0.8869480966766361,
+                "threshold": 0.016715603212595,
+                "personal": 0.4219865728233549,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 10:00:00', 3.0, '600108')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4890636110003237,
+                "threshold": 0.0454433480073078,
+                "personal": 0.51266473639415,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 5,
+                "score": 0.4371710876883522,
+                "threshold": 0.1054092490947617,
+                "personal": 0.3868980164483678,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.8815178911035777,
+                "threshold": 0.0514647604895343,
+                "personal": 0.2275596835841784,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 10:00:00', 1.0, '604799H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.6816293343511459,
+                "threshold": 0.0352444735147694,
+                "personal": 0.4633926129404826,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.4128985507246377,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 2,
+                "score": 0.2599365681174456,
+                "threshold": 0.1008154031667039,
+                "personal": 0.547466537847469,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 3,
+                "score": 0.4287220645806764,
+                "threshold": 0.1846982959283533,
+                "personal": 0.4706832182796688,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 10:00:00', 2.0, '604380H')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.3136774365604597,
+                "threshold": 0.0,
+                "personal": 1.0,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 2,
+                "score": 0.1217391304347826,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.8013827301112517,
+                "threshold": 0.0450146359462466,
+                "personal": 0.1799993453706564,
+                "willingness": 0.8549968905106179
+            }
+        ]
+    },
+    "('2018-07-01 10:00:00', 2.0, '603906')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4072927300364979,
+                "threshold": 0.0,
+                "personal": 0.5618463916112962,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.6380254096238036,
+                "threshold": 0.0450604616609807,
+                "personal": 0.2835417999842614,
+                "willingness": 1.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 1,
+                "score": 0.2592561067914046,
+                "threshold": -0.0029720451772016,
+                "personal": 0.3572070657731591,
+                "willingness": 0.8037158979896081
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.8080988090795598,
+                "threshold": 0.0327932181117112,
+                "personal": 0.4212147966194715,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 10:00:00', 2.0, '607938')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3116547908227414,
+                "threshold": 0.0072995605311737,
+                "personal": 0.1714114960352512,
+                "willingness": 0.3856758660793153
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 2,
+                "score": 0.0031876138433515,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.7148438018075337,
+                "threshold": 0.0,
+                "personal": 0.162226448482612,
+                "willingness": 0.770575630292407
+            }
+        ]
+    },
+    "('2018-07-01 10:00:00', 3.0, '606260')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.317524115755627,
+                "threshold": 0.0203042024761128,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.528086031192439,
+                "threshold": 0.1280347766274604,
+                "personal": 0.2135724231582199,
+                "willingness": 0.9076827984224348
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.0,
+                "threshold": -0.0,
+                "personal": 1.0,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 11:00:00', 2.0, '604771H')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.5356848837825737,
+                "threshold": 0.0168438850790785,
+                "personal": 0.8452625151947782,
+                "willingness": 0.8452625151947782
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 2,
+                "score": 0.5797938297068662,
+                "threshold": 0.0,
+                "personal": 0.54843518710826,
+                "willingness": 1.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 3,
+                "score": 0.375485527810161,
+                "threshold": 0.0,
+                "personal": 0.54843518710826,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 2,
+                "score": 0.498920204352898,
+                "threshold": 0.0,
+                "personal": 0.6417271259385899,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 11:00:00', 1.0, '607626')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.2967205147548578,
+                "threshold": 0.0,
+                "personal": 1.0,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 2,
+                "score": 0.2656917473486254,
+                "threshold": 0.0,
+                "personal": 1.0,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 2,
+                "score": 0.4822640119941436,
+                "threshold": 0.0,
+                "personal": 1.0,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 11:00:00', 1.0, '604728H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.486168666044538,
+                "threshold": 0.0462342471028532,
+                "personal": 0.3552334858891094,
+                "willingness": 0.7992753432504963
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.6161743917997284,
+                "threshold": 0.280961819042715,
+                "personal": 0.4540176536279633,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 11:00:00', 1.0, '602824')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3542608311354007,
+                "threshold": 0.0118797654375347,
+                "personal": 0.2116505626443679,
+                "willingness": 0.4762137659498278
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.5676185430011882,
+                "threshold": 0.0090467271322321,
+                "personal": 0.2160637751487598,
+                "willingness": 0.9182710443822296
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 10,
+                "score": 0.5044715179559469,
+                "threshold": 0.0359486104197198,
+                "personal": 0.2497554134067006,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 2,
+                "score": 0.4654791955367998,
+                "threshold": 0.1577018158242874,
+                "personal": 0.1435372722622767,
+                "willingness": 0.5454416345966517
+            }
+        ]
+    },
+    "('2018-07-01 11:00:00', 2.0, '604752H')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.4703593018961645,
+                "threshold": 0.0620749870460976,
+                "personal": 0.740799911183672,
+                "willingness": 0.740799911183672
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.4318448694321491,
+                "threshold": 0.0,
+                "personal": 0.3888051616784208,
+                "willingness": 1.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.1119786780702246,
+                "threshold": 0.3311267249413627,
+                "personal": 0.3962405780540575,
+                "willingness": 0.8915413006216295
+            }
+        ]
+    },
+    "('2018-07-01 11:00:00', 1.0, '604739H')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.5611389647910245,
+                "threshold": 0.0109293205841418,
+                "personal": 0.7886007277538868,
+                "willingness": 0.7886007277538868
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 2,
+                "score": 0.2077857503033371,
+                "threshold": 0.0,
+                "personal": 0.3441992062077588,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.8398422324617522,
+                "threshold": 0.0149032464476755,
+                "personal": 0.3263910023155805,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 11:00:00', 3.0, '607696')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.3641479099678456,
+                "threshold": 0.0124510848811876,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 10,
+                "score": 0.6088185480620544,
+                "threshold": 0.2022325335632779,
+                "personal": 0.1828795489860866,
+                "willingness": 0.8686778576839114
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.0,
+                "threshold": -0.0,
+                "personal": 0.150277474155639,
+                "willingness": 0.3381243168501879
+            }
+        ]
+    },
+    "('2018-07-01 12:00:00', 3.0, '606102')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4294893797364599,
+                "threshold": 0.0089126249493082,
+                "personal": 0.1649564941528531,
+                "willingness": 0.3711521118439196
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.7137782442294014,
+                "threshold": 0.0212054399373487,
+                "personal": 0.1587246448316974,
+                "willingness": 0.674579740534714
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3524639147681328,
+                "threshold": 0.5481229591690525,
+                "personal": 0.1299875574992761,
+                "willingness": 0.2924720043733712
+            }
+        ]
+    },
+    "('2018-07-01 12:00:00', 1.0, '604733H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.7016741650589104,
+                "threshold": 0.0680425583333927,
+                "personal": 0.466388003760882,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4043179141367651,
+                "threshold": 0.8432192042178582,
+                "personal": 0.4981009466942422,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 12:00:00', 2.0, '604895H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4541027571619994,
+                "threshold": 0.0328174690903318,
+                "personal": 0.1543506031177097,
+                "willingness": 0.3472888570148469
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 3,
+                "score": 0.2491262902784724,
+                "threshold": 0.0,
+                "personal": 0.1770499931637728,
+                "willingness": 0.7524624709460346
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 5,
+                "score": 0.8696154691459823,
+                "threshold": 0.0870852812056018,
+                "personal": 0.2372466523186124,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 12:00:00', 1.0, '604804H')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.5284766840610317,
+                "threshold": 0.0092450425472917,
+                "personal": 0.7936088808290716,
+                "willingness": 0.7936088808290716
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 2,
+                "score": 0.8736766024085327,
+                "threshold": 0.0180718995288666,
+                "personal": 0.6139960465925215,
+                "willingness": 1.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 1,
+                "score": 0.4175173484789654,
+                "threshold": -0.1186268045847784,
+                "personal": 0.6696460180132796,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 2,
+                "score": 0.6062970611740766,
+                "threshold": 0.1406566397399749,
+                "personal": 0.5206201684880114,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 12:00:00', 2.0, '604726H')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.5186166511444406,
+                "threshold": 0.008894478047615,
+                "personal": 1.0,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.8673886389711667,
+                "threshold": 0.2367052501236427,
+                "personal": 0.7304346735008204,
+                "willingness": 1.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 2,
+                "score": 0.3175259442835142,
+                "threshold": -0.0592729494428143,
+                "personal": 0.2302806046463429,
+                "willingness": 0.875066297656103
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3594418060584865,
+                "threshold": 0.2576560821739134,
+                "personal": 0.2704125899688755,
+                "willingness": 0.6084283274299699
+            }
+        ]
+    },
+    "('2018-07-01 12:00:00', 1.0, '604903H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.5521122600467964,
+                "threshold": 0.0319588753290064,
+                "personal": 0.3862012643229058,
+                "willingness": 0.868952844726538
+            },
+            {
+                "incentive": 1,
+                "score": 0.6205856591982705,
+                "threshold": 0.0092314659604024,
+                "personal": 0.5340278030593772,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 2,
+                "score": 0.3327629839018372,
+                "threshold": 0.0,
+                "personal": 0.6330099896482686,
+                "willingness": 1.0
+            },
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 1,
+                "score": 0.3553002267617994,
+                "threshold": -0.1189439928582359,
+                "personal": 0.4816077920409658,
+                "willingness": 1.0
+            },
+            {
+                "incentive": 1,
+                "score": 0.337055809700586,
+                "threshold": -0.0409599954990034,
+                "personal": 0.6921001711561688,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.5889115555156461,
+                "threshold": 0.3501732065964668,
+                "personal": 1.0,
+                "willingness": 1.0
+            },
+            {
+                "incentive": 10,
+                "score": 0.2040131527231908,
+                "threshold": 0.0,
+                "personal": 0.4958246142798924,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 12:00:00', 2.0, '607289')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.348831639520099,
+                "threshold": 0.0407489560111922,
+                "personal": 0.2158038244257122,
+                "willingness": 0.4855586049578525
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 10,
+                "score": 0.2625,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 6,
+                "score": 0.7097229774389555,
+                "threshold": 0.0411748640586878,
+                "personal": 0.1391739753542863,
+                "willingness": 0.6555094239186889
+            }
+        ]
+    },
+    "('2018-07-01 12:00:00', 1.0, '604832H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.5439560913175024,
+                "threshold": 0.0,
+                "personal": 0.4856660958740135,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.6098235175082335,
+                "threshold": 0.5448058026905974,
+                "personal": 0.5324667019156847,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 12:00:00', 1.0, '606789')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.3662318840579709,
+                "threshold": 0.0512642128393525,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.0309050772626931,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 10,
+                "score": 0.4924276821945865,
+                "threshold": -0.0018874152767852,
+                "personal": 0.2670105541533842,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 6,
+                "score": 0.5776394328825402,
+                "threshold": 0.0501520833758072,
+                "personal": 0.186588088626268,
+                "willingness": 0.8788298974297222
+            }
+        ]
+    },
+    "('2018-07-01 12:00:00', 2.0, '604832H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.5780287894122981,
+                "threshold": 0.0539762220672996,
+                "personal": 0.5223582614188107,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.0508965636187135,
+                "threshold": 0.0,
+                "personal": 0.3886860715903943,
+                "willingness": 0.8745436610783873
+            }
+        ]
+    },
+    "('2018-07-01 13:00:00', 2.0, '604802H')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.5232110580462606,
+                "threshold": 0.0560371158516082,
+                "personal": 0.7868857304792315,
+                "willingness": 0.7868857304792315
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": 0.5656584148195323,
+                "threshold": 0.0129659688775795,
+                "personal": 0.5571585066250817,
+                "willingness": 0.5571585066250817
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 1,
+                "score": 0.4172088170034386,
+                "threshold": 0.0503940598985935,
+                "personal": 0.6787735101732701,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 3,
+                "score": 0.7008567522947914,
+                "threshold": 0.2175176554223362,
+                "personal": 0.6117658043934192,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 13:00:00', 1.0, '604380H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4170634604482016,
+                "threshold": 0.0093024452434407,
+                "personal": 0.1529187643051469,
+                "willingness": 0.3440672196865806
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 4,
+                "score": 0.5,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 1,
+                "score": 0.2924063900659147,
+                "threshold": 0.0717173344193257,
+                "personal": 0.1514731314093332,
+                "willingness": 0.3408145456709998
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.116435032930514,
+                "threshold": 0.0,
+                "personal": 1.0,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 13:00:00', 2.0, '604900H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.724348632609468,
+                "threshold": 0.013780215640118,
+                "personal": 0.5407371670906843,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": 0.3666941991461913,
+                "threshold": 0.000328115630288,
+                "personal": 0.3950938624918689,
+                "willingness": 0.3950938624918689
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 5,
+                "score": 0.6822494713499534,
+                "threshold": 0.0345063928581489,
+                "personal": 0.6126010526691379,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 13:00:00', 1.0, '604761H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4746523893687469,
+                "threshold": 0.0362955719495847,
+                "personal": 0.1433158391425864,
+                "willingness": 0.3224606380708195
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 2,
+                "score": 0.4526109465805252,
+                "threshold": 0.0,
+                "personal": 1.0,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 2,
+                "score": 0.4658113266091635,
+                "threshold": 0.0365789591119389,
+                "personal": 0.1511644601862129,
+                "willingness": 0.5744249487076091
+            }
+        ]
+    },
+    "('2018-07-01 13:00:00', 1.0, '604730H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4683815761862385,
+                "threshold": 0.0,
+                "personal": 0.1993929921917125,
+                "willingness": 0.4486342324313533
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.2009594283512657,
+                "threshold": 0.0,
+                "personal": 0.2090693175657122,
+                "willingness": 0.8885445996542769
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3030811047478785,
+                "threshold": 0.1436257679665975,
+                "personal": 0.2224507316151933,
+                "willingness": 0.500514146134185
+            }
+        ]
+    },
+    "('2018-07-01 13:00:00', 2.0, '604758H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4880711996325531,
+                "threshold": 0.0338015097143716,
+                "personal": 0.6410281757329201,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 1,
+                "score": 0.6085704431998238,
+                "threshold": 0.0079328002442259,
+                "personal": 0.5760621937566723,
+                "willingness": 1.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 5,
+                "score": 0.4948201606762294,
+                "threshold": 0.0313065071591995,
+                "personal": 0.5221905832224436,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 13:00:00', 2.0, '606523')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.2759420289855072,
+                "threshold": 0.0274659618220745,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.1896630236794171,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 1,
+                "score": 0.25,
+                "threshold": 0.1714361882412959,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 2,
+                "score": 0.3082109701092396,
+                "threshold": 0.0545750652953421,
+                "personal": 0.095168052090063,
+                "willingness": 0.3616385979422396
+            }
+        ]
+    },
+    "('2018-07-01 13:00:00', 2.0, '603904')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3694208629109033,
+                "threshold": 0.0,
+                "personal": 0.2560150861808699,
+                "willingness": 0.5760339439069573
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 10,
+                "score": 0.2319278409414188,
+                "threshold": 0.0,
+                "personal": 0.1651713199577711,
+                "willingness": 0.7845637697994128
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.2591413154142303,
+                "threshold": 0.1007526823410837,
+                "personal": 0.2015283022803618,
+                "willingness": 0.4534386801308141
+            }
+        ]
+    },
+    "('2018-07-01 13:00:00', 1.0, '607855')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.3062700964630224,
+                "threshold": 0.0071779895383812,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.0344250797313197,
+                "threshold": -0.0,
+                "personal": 0.1660119629210503,
+                "willingness": 0.3735269165723632
+            }
+        ]
+    },
+    "('2018-07-01 14:00:00', 1.0, '604733H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.5946943187673632,
+                "threshold": 0.0,
+                "personal": 0.5773429430937307,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 10,
+                "score": 0.3664581084934867,
+                "threshold": 0.1150623452682439,
+                "personal": 0.5818174191266553,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.7612296748855484,
+                "threshold": 0.0121264254968493,
+                "personal": 0.4312999288506925,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 14:00:00', 2.0, '517866')": {
+        "MISP": [
+            {
+                "incentive": 2,
+                "score": 0.5310273440083548,
+                "threshold": 0.0507201292445102,
+                "personal": 0.2589857400986802,
+                "willingness": 0.9841458123749848
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 2,
+                "score": 0.5075937769904826,
+                "threshold": 0.0956129479760752,
+                "personal": 0.1808549308213366,
+                "willingness": 0.6872487371210791
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 1,
+                "score": 0.2293145622460488,
+                "threshold": -0.0045043151768458,
+                "personal": 0.1703879521120395,
+                "willingness": 0.3833728922520888
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.3549597855227882,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ]
+    },
+    "('2018-07-01 15:00:00', 1.0, '604749H')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.868394479741686,
+                "threshold": 0.051154197526416,
+                "personal": 1.0,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 2,
+                "score": 0.3060765656497125,
+                "threshold": -0.069076333986748,
+                "personal": 0.3414590549900355,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4864255018069409,
+                "threshold": 0.2925384318303419,
+                "personal": 0.3103873701893786,
+                "willingness": 0.6983715829261019
+            }
+        ]
+    },
+    "('2018-07-01 15:00:00', 1.0, '604739H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.7552175915906729,
+                "threshold": 0.0557096599834421,
+                "personal": 0.339235248572169,
+                "willingness": 0.7632793092873803
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 3,
+                "score": 0.7494486122737953,
+                "threshold": 0.0,
+                "personal": 0.35583564837039,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 15:00:00', 2.0, '605077H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.583450037659791,
+                "threshold": 0.0167860369612846,
+                "personal": 0.1895826832857693,
+                "willingness": 0.4265610373929809
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 2,
+                "score": 0.862608308116564,
+                "threshold": 0.009304198421728,
+                "personal": 0.2799547240723219,
+                "willingness": 1.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 2,
+                "score": 0.3444994182290624,
+                "threshold": -0.0457271031502213,
+                "personal": 0.2696133672827834,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 2,
+                "score": 0.5308313919772664,
+                "threshold": 0.0,
+                "personal": 1.0,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 15:00:00', 1.0, '604976')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.557278782727709,
+                "threshold": 0.0527278927369895,
+                "personal": 0.1606960469224126,
+                "willingness": 0.3615661055754284
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 2,
+                "score": 0.2314049586776859,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 3,
+                "score": 0.3017559051547415,
+                "threshold": 0.0,
+                "personal": 0.8119067222454005,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 2,
+                "score": 0.583487744178555,
+                "threshold": 0.0,
+                "personal": 0.8119067222454005,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 15:00:00', 1.0, '604728H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.7379369525886843,
+                "threshold": 0.0198438597344233,
+                "personal": 0.3247463467599111,
+                "willingness": 0.7306792802098001
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 2,
+                "score": 0.8840959664389123,
+                "threshold": -0.0020837784342616,
+                "personal": 0.3390766618012084,
+                "willingness": 1.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 2,
+                "score": 0.5325522462187029,
+                "threshold": 0.0,
+                "personal": 0.3865609089130686,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 15:00:00', 2.0, '604804H')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.6199240110291113,
+                "threshold": 0.0521936793897891,
+                "personal": 0.8248544875423391,
+                "willingness": 0.8248544875423391
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 2,
+                "score": 0.0286885245901639,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 1,
+                "score": 0.3550453634732827,
+                "threshold": 0.1352942360453387,
+                "personal": 0.4963142296075605,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.5597816450333784,
+                "threshold": 0.1151125492405154,
+                "personal": 0.7245491277789898,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 15:00:00', 1.0, '604904H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4504335958633253,
+                "threshold": 0.033075796469079,
+                "personal": 0.6291765569949014,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 2,
+                "score": 0.3276345266230135,
+                "threshold": 0.2171921922551417,
+                "personal": 0.36414414510309,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3405313839213556,
+                "threshold": 0.2914817234355668,
+                "personal": 0.2582024605836163,
+                "willingness": 0.5809555363131367
+            }
+        ]
+    },
+    "('2018-07-01 15:00:00', 2.0, '604902H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.5968122807319136,
+                "threshold": 0.0421287369605049,
+                "personal": 0.7534269203073874,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 2,
+                "score": 0.0031876138433515,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.8856663602842827,
+                "threshold": 0.0345270191738165,
+                "personal": 0.747737541720548,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 16:00:00', 1.0, '604897H')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.8718816340946642,
+                "threshold": 0.0187786527655706,
+                "personal": 1.0,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 3,
+                "score": 0.3094158879262511,
+                "threshold": -0.0299627137170861,
+                "personal": 0.3255232682735345,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 2,
+                "score": 0.8840453940750032,
+                "threshold": 0.1029242372140282,
+                "personal": 0.3255232682735345,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 16:00:00', 2.0, '604725H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.911680619016682,
+                "threshold": 0.0,
+                "personal": 0.4602573110407778,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 6,
+                "score": 0.3711739361986675,
+                "threshold": 0.0,
+                "personal": 0.2782655614699751,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.5916512334279642,
+                "threshold": 0.190893346248915,
+                "personal": 0.4795637093686743,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 16:00:00', 2.0, '604738H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.890450713360207,
+                "threshold": 0.0591304533690072,
+                "personal": 0.5142896312638917,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 2,
+                "score": 0.9113418140219244,
+                "threshold": 0.0592557396370333,
+                "personal": 0.3694575724457029,
+                "willingness": 1.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 6,
+                "score": 0.3745922476759638,
+                "threshold": 0.0,
+                "personal": 0.5793890623217777,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.5888865432038947,
+                "threshold": 0.0224729846382585,
+                "personal": 0.4651335423106164,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 16:00:00', 2.0, '604836H')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.8578285674215806,
+                "threshold": 0.1156317151942081,
+                "personal": 0.942958620186343,
+                "willingness": 0.942958620186343
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 3,
+                "score": 0.2623888440727214,
+                "threshold": -0.0163373506993392,
+                "personal": 0.374960919603249,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4169499898922924,
+                "threshold": 0.0174460899733054,
+                "personal": 0.3486451534763953,
+                "willingness": 0.7844515953218894
+            }
+        ]
+    },
+    "('2018-07-01 16:00:00', 2.0, '604771H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.8828075091753145,
+                "threshold": 0.0171193632975642,
+                "personal": 0.7038888584179294,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.5265110412915748,
+                "threshold": 1.2154855059408798,
+                "personal": 0.6683409884172214,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 16:00:00', 3.0, '518475')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.565440311405951,
+                "threshold": 0.0492797305535572,
+                "personal": 0.2808997043980411,
+                "willingness": 0.6320243348955925
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 6,
+                "score": 0.8447459312437589,
+                "threshold": 0.037482769799223,
+                "personal": 0.1999021890530042,
+                "willingness": 0.94153931043965
+            }
+        ]
+    },
+    "('2018-07-01 17:00:00', 3.0, '606941')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.6168576475679761,
+                "threshold": 0.021560191196705,
+                "personal": 0.2261777775109116,
+                "willingness": 0.5088999993995513
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 4,
+                "score": 0.7733513309117223,
+                "threshold": 0.021560191196705,
+                "personal": 0.1758890164350041,
+                "willingness": 0.8090894756010188
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 3,
+                "score": 0.7133522642682568,
+                "threshold": 0.12936114718023,
+                "personal": 0.2217291459801682,
+                "willingness": 0.942348870415715
+            }
+        ]
+    },
+    "('2018-07-01 17:00:00', 1.0, '604760H')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.5191236663289177,
+                "threshold": 0.0,
+                "personal": 1.0,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 4,
+                "score": 0.7101986396485844,
+                "threshold": 0.0281920505067593,
+                "personal": 0.1466692315720788,
+                "willingness": 0.6746784652315625
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 6,
+                "score": 0.2807945740174449,
+                "threshold": -0.0245612579450905,
+                "personal": 0.1579253021301007,
+                "willingness": 0.7438281730327744
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4305504979159881,
+                "threshold": 0.498765539889364,
+                "personal": 0.1432607599622455,
+                "willingness": 0.3223367099150525
+            }
+        ]
+    },
+    "('2018-07-01 17:00:00', 2.0, 'V009198')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.5,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3680620602507066,
+                "threshold": 0.1706164051633825,
+                "personal": 0.1514795473354507,
+                "willingness": 0.340828981504764
+            }
+        ]
+    },
+    "('2018-07-01 17:00:00', 3.0, '603912')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3282220233169858,
+                "threshold": 0.0062988816186091,
+                "personal": 0.2217469738781937,
+                "willingness": 0.4989306912259358
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.4778646245048283,
+                "threshold": 0.0165725325250544,
+                "personal": 0.1744840944241309,
+                "willingness": 0.7415574013025565
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 3,
+                "score": 0.2074236650919602,
+                "threshold": -0.0,
+                "personal": 0.1209256896655957,
+                "willingness": 0.5139341810787821
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.4665576413132625,
+                "threshold": 0.0,
+                "personal": 0.1579435816511544,
+                "willingness": 0.7502320128429836
+            }
+        ]
+    },
+    "('2018-07-01 17:00:00', 1.0, '606620')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.2709003215434084,
+                "threshold": 0.0179214334872876,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.5568923779633198,
+                "threshold": 0.0353797951020054,
+                "personal": 0.1572040519819422,
+                "willingness": 0.6681172209232544
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.4432529043789097,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ]
+    },
+    "('2018-07-01 17:00:00', 1.0, '520263')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.478032357807283,
+                "threshold": 0.0070076694105792,
+                "personal": 1.0,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.5325411238981651,
+                "threshold": 0.0128124493639909,
+                "personal": 0.20788100447114,
+                "willingness": 0.8834942690023453
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 10,
+                "score": 0.6250835111910826,
+                "threshold": -0.0,
+                "personal": 1.0,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.5172094172096303,
+                "threshold": 0.0,
+                "personal": 0.2318134904231385,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 18:00:00', 2.0, '605454')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.6054467291495695,
+                "threshold": 0.0600318677411924,
+                "personal": 0.2030284352709837,
+                "willingness": 0.4568139793597134
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 5,
+                "score": 0.2826101234334709,
+                "threshold": -0.0123814972319429,
+                "personal": 0.2249565524883008,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 2,
+                "score": 0.477882810242739,
+                "threshold": 0.0,
+                "personal": 0.1571039420580448,
+                "willingness": 0.5969949798205704
+            }
+        ]
+    },
+    "('2018-07-01 18:00:00', 2.0, '506530')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.5652199308034409,
+                "threshold": 0.0116262830264635,
+                "personal": 1.0,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 3,
+                "score": 0.7740242349272884,
+                "threshold": 0.0567715547348932,
+                "personal": 0.2533392126363443,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 19:00:00', 3.0, '606909')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4126504642065476,
+                "threshold": 0.0264340107022716,
+                "personal": 0.1670283664586027,
+                "willingness": 0.3758138245318562
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.719068749363907,
+                "threshold": 0.01895654324663,
+                "personal": 0.1642323863815044,
+                "willingness": 0.6979876421213941
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.368756412230007,
+                "threshold": 0.2775512486300543,
+                "personal": 0.116809016142673,
+                "willingness": 0.2628202863210144
+            }
+        ]
+    },
+    "('2018-07-01 19:00:00', 1.0, '518009')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3963605325231167,
+                "threshold": 0.0328000164833876,
+                "personal": 0.2111196226271182,
+                "willingness": 0.4750191509110159
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.7878099765672545,
+                "threshold": 0.02313615544962,
+                "personal": 0.1933206870769713,
+                "willingness": 0.821612920077128
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3584610734958323,
+                "threshold": 0.6379182583802007,
+                "personal": 0.1481722549002347,
+                "willingness": 0.3333875735255283
+            }
+        ]
+    },
+    "('2018-07-01 19:00:00', 2.0, '607224')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4846701120582818,
+                "threshold": 0.0158130557591594,
+                "personal": 0.1698471830835109,
+                "willingness": 0.3821561619378996
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 5,
+                "score": 0.8307482295896045,
+                "threshold": 0.0312956492001598,
+                "personal": 0.1878789219732758,
+                "willingness": 0.8830309332743965
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 2,
+                "score": 0.5,
+                "threshold": 0.1543010812200667,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ]
+    },
+    "('2018-07-01 19:00:00', 2.0, '603912')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3526677005482941,
+                "threshold": 0.0,
+                "personal": 0.5232935307952754,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.4575596279929008,
+                "threshold": 0.0348370593527167,
+                "personal": 0.1593984182737204,
+                "willingness": 0.6774432776633117
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 3,
+                "score": 0.283822190489054,
+                "threshold": -0.0040927282982333,
+                "personal": 0.170607781378311,
+                "willingness": 0.725083070857822
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.5352968781953853,
+                "threshold": 0.0,
+                "personal": 0.1971208266018934,
+                "willingness": 0.936323926358994
+            }
+        ]
+    },
+    "('2018-07-01 19:00:00', 2.0, '604380H')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.2564308681672025,
+                "threshold": 0.0208746594680442,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 10,
+                "score": 0.4308693986978169,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ]
+    },
+    "('2018-07-01 19:00:00', 2.0, '519392')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.2650191357246588,
+                "threshold": 0.0,
+                "personal": 1.0,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 1,
+                "score": 0.1692361111111111,
+                "threshold": 0.0858698552561995,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ]
+    },
+    "('2018-07-01 20:00:00', 3.0, '607289')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.3159890113053166,
+                "threshold": 0.0371887187675155,
+                "personal": 0.132800606460875,
+                "willingness": 0.132800606460875
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 10,
+                "score": 0.2410714285714285,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 2,
+                "score": 0.6527805576704201,
+                "threshold": 0.0851454528639922,
+                "personal": 0.1925626713662636,
+                "willingness": 0.7317381511918017
+            }
+        ]
+    },
+    "('2018-07-01 20:00:00', 1.0, '607289')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4563858312410613,
+                "threshold": 0.0469226207592791,
+                "personal": 0.1778573637507585,
+                "willingness": 0.4001790684392066
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 6,
+                "score": 0.5877883904254059,
+                "threshold": 0.0432447540913448,
+                "personal": 0.1434953878577926,
+                "willingness": 0.6758632768102035
+            }
+        ]
+    },
+    "('2018-07-01 20:00:00', 2.0, '604900H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.7514431714521718,
+                "threshold": 0.0564539436283402,
+                "personal": 0.4670274083788744,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.5525600829285301,
+                "threshold": 0.0473162923796495,
+                "personal": 0.4656371206281863,
+                "willingness": 1.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 3,
+                "score": 0.7548610058519505,
+                "threshold": 0.0889457549781312,
+                "personal": 0.4656371206281863,
+                "willingness": 1.0
+            }
+        ]
+    },
+    "('2018-07-01 20:00:00', 1.0, '607795')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.255144694533762,
+                "threshold": 0.0035356693290075,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.5363906306995196,
+                "threshold": 0.5595743739249026,
+                "personal": 0.1316753694577933,
+                "willingness": 0.5596203201956217
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ]
+    },
+    "('2018-07-01 21:00:00', 2.0, '519392')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.3550724637681159,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            },
+            {
+                "incentive": 0,
+                "score": 0.2885852090032154,
+                "threshold": 0.0287208602618254,
+                "personal": 0.0,
+                "willingness": 0.0
+            },
+            {
+                "incentive": 0,
+                "score": 0.2863583194951139,
+                "threshold": 0.0,
+                "personal": 0.0833048647772937,
+                "willingness": 0.0833048647772937
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.6342365604553056,
+                "threshold": 0.005735250489486,
+                "personal": 0.1193459677501412,
+                "willingness": 0.5072203629381002
+            },
+            {
+                "incentive": 3,
+                "score": 0.4065666803429154,
+                "threshold": 0.3841043298823813,
+                "personal": 0.1461914946520238,
+                "willingness": 0.6213138522711014
+            },
+            {
+                "incentive": 3,
+                "score": 0.5213681677475904,
+                "threshold": 0.3841043298823813,
+                "personal": 0.1366352480054002,
+                "willingness": 0.5806998040229512
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 1,
+                "score": 0.275,
+                "threshold": -0.0625523723446493,
+                "personal": 0.0,
+                "willingness": 0.0
+            },
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            },
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3837945601151724,
+                "threshold": 0.2425179350679118,
+                "personal": 0.1446959421772611,
+                "willingness": 0.3255658698988375
+            },
+            {
+                "incentive": 1,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            },
+            {
+                "incentive": 1,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ]
+    },
+    "('2018-07-01 21:00:00', 1.0, '604773H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.6226477745667216,
+                "threshold": 0.0,
+                "personal": 0.5169602279643299,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 1,
+                "score": 0.2578831994706871,
+                "threshold": -0.0439305119279583,
+                "personal": 0.345969214322137,
+                "willingness": 0.7784307322248084
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4252940386994909,
+                "threshold": 0.5416524895020971,
+                "personal": 0.4312387993686783,
+                "willingness": 0.970287298579526
+            }
+        ]
+    },
+    "('2018-07-01 21:00:00', 1.0, '603906')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4760042795624837,
+                "threshold": 0.0,
+                "personal": 0.5618463916112962,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 10,
+                "score": 0.7076607672069826,
+                "threshold": -0.0,
+                "personal": 0.2809501327860177,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": 0.0057215327717315,
+                "threshold": -0.0,
+                "personal": 0.4090107372470091,
+                "willingness": 0.9202741588057706
+            }
+        ]
+    },
+    "('2018-07-01 21:00:00', 1.0, '604903H')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.4269258524826476,
+                "threshold": 0.0754426310856899,
+                "personal": 0.8225727238228349,
+                "willingness": 0.8225727238228349
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ]
+    },
+    "('2018-07-01 21:00:00', 2.0, '605931')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.2709003215434084,
+                "threshold": 0.0145568025086404,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ]
+    },
+    "('2018-07-01 22:00:00', 2.0, '604380H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.2865280509006487,
+                "threshold": 0.0059380360682601,
+                "personal": 0.1724520585784818,
+                "willingness": 0.3880171318015841
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.4830086950667236,
+                "threshold": 0.3841043298823813,
+                "personal": 0.1686538731655548,
+                "willingness": 0.7167789609536082
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ]
+    },
+    "('2018-07-01 23:00:00', 3.0, '607688')": {
+        "MISP": [
+            {
+                "incentive": 0,
+                "score": 0.3094202898550724,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.5585048409841205,
+                "threshold": 0.068660868997458,
+                "personal": 0.1497490323418028,
+                "willingness": 0.6364333874526621
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 3,
+                "score": 0.5206812744523651,
+                "threshold": 0.0952843715776308,
+                "personal": 0.1452318961146593,
+                "willingness": 0.6172355584873023
+            }
+        ]
+    },
+    "('2018-07-01 23:00:00', 3.0, '606666')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4216514831253093,
+                "threshold": 0.012545883233614,
+                "personal": 0.211399729812057,
+                "willingness": 0.4756493920771283
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 1,
+                "score": 0.2435482186501603,
+                "threshold": -0.0106131362202403,
+                "personal": 0.1635452805790777,
+                "willingness": 0.367976881302925
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 2,
+                "score": 0.4350502367833178,
+                "threshold": 0.1781674411498713,
+                "personal": 0.1626724097529971,
+                "willingness": 0.6181551570613889
+            }
+        ]
+    },
+    "('2018-07-01 23:00:00', 3.0, '604732H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.3624780164437519,
+                "threshold": 0.0060564544702521,
+                "personal": 0.3264566207155217,
+                "willingness": 0.7345273966099239
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 3,
+                "score": 0.4922873275880965,
+                "threshold": 0.3841043298823813,
+                "personal": 0.1584471297704509,
+                "willingness": 0.6734003015244164
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 10,
+                "score": 0.549216592201905,
+                "threshold": 0.2484603014133314,
+                "personal": 0.2139980140523648,
+                "willingness": 1.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ]
+    },
+    "('2018-07-01 23:00:00', 3.0, '604738H')": {
+        "MISP": [
+            {
+                "incentive": 1,
+                "score": 0.4500927721550628,
+                "threshold": 0.0688309695619156,
+                "personal": 0.5142896312638917,
+                "willingness": 1.0
+            }
+        ],
+        "MISP_Q_Learning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "L_MISP_QLearning": [
+            {
+                "incentive": 0,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ],
+        "EL_MISP": [
+            {
+                "incentive": 1,
+                "score": -1.0,
+                "threshold": 0.0,
+                "personal": 0.0,
+                "willingness": 0.0
+            }
+        ]
+    }
+}

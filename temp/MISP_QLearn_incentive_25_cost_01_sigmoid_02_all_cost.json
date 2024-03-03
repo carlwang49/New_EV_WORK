@@ -1,0 +1,142 @@
+{
+    "50230": {
+        "basic_tariff": 3668.9021412300685,
+        "current_tariff": 3686.329919959755,
+        "overload_penalty": 1365.936347325001,
+        "total_price": 8721.168408514824,
+        "schedule_revenue": -8565.168408514824
+    },
+    "51199": {
+        "basic_tariff": 3172.5821412300684,
+        "current_tariff": 3086.5935517035864,
+        "overload_penalty": 1235.740702637925,
+        "total_price": 7494.91639557158,
+        "schedule_revenue": -7284.91639557158
+    },
+    "50841": {
+        "basic_tariff": 6445.192141230068,
+        "current_tariff": 6188.181893867519,
+        "overload_penalty": 838.3745862042539,
+        "total_price": 13471.74862130184,
+        "schedule_revenue": -13240.74862130184
+    },
+    "50692": {
+        "basic_tariff": 2691.7721412300684,
+        "current_tariff": 2563.079879468732,
+        "overload_penalty": 495.48874155000044,
+        "total_price": 5750.340762248801,
+        "schedule_revenue": -5576.340762248801
+    },
+    "51087": {
+        "basic_tariff": 2846.8721412300683,
+        "current_tariff": 2956.8939860715595,
+        "overload_penalty": 478.07144668304926,
+        "total_price": 6281.837573984677,
+        "schedule_revenue": -6116.837573984677
+    },
+    "51198": {
+        "basic_tariff": 3296.6621412300683,
+        "current_tariff": 3364.523041349816,
+        "overload_penalty": 445.4777934905097,
+        "total_price": 7106.662976070394,
+        "schedule_revenue": -6929.662976070394
+    },
+    "50840": {
+        "basic_tariff": 2722.7921412300684,
+        "current_tariff": 2678.657973099133,
+        "overload_penalty": 517.1844569816099,
+        "total_price": 5918.634571310811,
+        "schedule_revenue": -5768.634571310811
+    },
+    "50349": {
+        "basic_tariff": 6119.482141230068,
+        "current_tariff": 6103.678926676756,
+        "overload_penalty": 1800.5194127327563,
+        "total_price": 14023.680480639581,
+        "schedule_revenue": -13831.680480639581
+    },
+    "50909": {
+        "basic_tariff": 3684.4121412300683,
+        "current_tariff": 3674.3917918581515,
+        "overload_penalty": 210.92248477212024,
+        "total_price": 7569.72641786034,
+        "schedule_revenue": -7413.72641786034
+    },
+    "50261": {
+        "basic_tariff": 5592.142141230069,
+        "current_tariff": 4657.882998215541,
+        "overload_penalty": 0,
+        "total_price": 10250.02513944561,
+        "schedule_revenue": -10073.02513944561
+    },
+    "50266": {
+        "basic_tariff": 4242.772141230068,
+        "current_tariff": 4157.331068327885,
+        "overload_penalty": 405.49013551695157,
+        "total_price": 8805.593345074905,
+        "schedule_revenue": -8631.593345074905
+    },
+    "50263": {
+        "basic_tariff": 2319.532141230068,
+        "current_tariff": 2306.494425895942,
+        "overload_penalty": 308.35728706695016,
+        "total_price": 4934.383854192961,
+        "schedule_revenue": -4742.383854192961
+    },
+    "50269": {
+        "basic_tariff": 2412.5921412300686,
+        "current_tariff": 2211.0025501913356,
+        "overload_penalty": 26.697255283049838,
+        "total_price": 4650.291946704454,
+        "schedule_revenue": -4383.291946704454
+    },
+    "50911": {
+        "basic_tariff": 3451.762141230068,
+        "current_tariff": 3375.0685065961184,
+        "overload_penalty": 0,
+        "total_price": 6826.830647826187,
+        "schedule_revenue": -6370.830647826187
+    },
+    "50267": {
+        "basic_tariff": 4289.302141230069,
+        "current_tariff": 4188.27257189513,
+        "overload_penalty": 175.45086489051002,
+        "total_price": 8653.02557801571,
+        "schedule_revenue": -8452.02557801571
+    },
+    "51200": {
+        "basic_tariff": 3188.0921412300686,
+        "current_tariff": 3000.8208681616866,
+        "overload_penalty": 606.33763447356,
+        "total_price": 6795.250643865315,
+        "schedule_revenue": -6573.250643865315
+    },
+    "50338": {
+        "basic_tariff": 4289.302141230069,
+        "current_tariff": 3922.615720521682,
+        "overload_penalty": 222.9141963566107,
+        "total_price": 8434.83205810836,
+        "schedule_revenue": -8215.83205810836
+    },
+    "50240": {
+        "basic_tariff": 3374.2121412300685,
+        "current_tariff": 3297.8952091589063,
+        "overload_penalty": 300.9229907801696,
+        "total_price": 6973.030341169144,
+        "schedule_revenue": -6838.030341169144
+    },
+    "50675": {
+        "basic_tariff": 5359.492141230068,
+        "current_tariff": 4953.380558592077,
+        "overload_penalty": 1349.1676914452567,
+        "total_price": 11662.040391267403,
+        "schedule_revenue": -11506.040391267403
+    },
+    "50268": {
+        "basic_tariff": 5328.472141230069,
+        "current_tariff": 4634.045133697216,
+        "overload_penalty": 0,
+        "total_price": 9962.517274927286,
+        "schedule_revenue": -9701.517274927286
+    }
+}
