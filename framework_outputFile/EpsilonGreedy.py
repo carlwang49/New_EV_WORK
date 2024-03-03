@@ -44,7 +44,7 @@ class EpsilonGreedy():
         if random.random() > self.epsilon:
             return recommend_q, 1
         else:
-            return score_max_recommend, 0
+            return score_max_recommend, 1
 
 
     def user_decision(self, prob_accept=0.5):
