@@ -7,25 +7,27 @@ from datetime import timedelta
 from dateutil import parser
 from collections import defaultdict
 from EpsilonGreedy import EpsilonGreedy
-from MISP_EL_incentive_025_cost_01_sigmoid import MISP
+from MISP_incentive_025_cost_01_sigmoid import MISP
 from UserBehavior import UserBehavior
+import random
 
 ### global variable ###
 ALPHA = 0.2
-TESTING_NAME = "MISP_QLearn_EL_random_Origin_newBehavior"
-TEST_DAY = "2024-03-04"
-
-SIGMOID_INCENTIVE_UNIT_COST = 0.15
+TESTING_NAME = "MISMF_Qlearn_e05_random"
+TEST_DAY = "2023-07-15"
+ 
 INCENTIVE_UNIT = 0.25
 COST_UNIT = 0.1
 
+EMB_DIM = 10
+SIGMOID_INCENTIVE_UNIT_COST = 0.2
+
+EPSILON_RATE = 0.5
 TESTING_START_DATE = parser.parse("2018-07-01")
 TESTING_END_DATE = parser.parse("2018-07-08")
 
-EPSILON_RATE = 0.5
 
-PATH = f"../NewResult/Carl/{TESTING_NAME}/SIGMOID_INCENTIVE_UNIT_COST_{SIGMOID_INCENTIVE_UNIT_COST}/{TEST_DAY}/alpha_{ALPHA}/"
-FILE_PATH = f'../NewResult/Carl/{TESTING_NAME}/SIGMOID_INCENTIVE_UNIT_COST_{SIGMOID_INCENTIVE_UNIT_COST}/{TEST_DAY}/q_table.json'
+
 
 class QLearn(MISP):
 
@@ -33,7 +35,6 @@ class QLearn(MISP):
         
         super().__init__()
         self.user_facility_perc_dic = pd.read_json("../Dataset/user_facility_perc_dic.json").to_dict()
-        print(f"ALPHA = {ALPHA}")
     
     
 
@@ -136,6 +137,20 @@ class QLearn(MISP):
                         index_option_dict[str(key)] = value
 
         return index_option_dict
+
+
+    # def get_user_interaction_value(self, user_list):
+    #     '''
+    #     讀取 relational learning 預測的偏好度
+    #     user_list: 所有使用者 ID
+    #     '''
+    #     # for user_id in user_list:
+    #     #     history = pd.read_csv(f"../Result/MISP/Relation/{user_id}.csv", index_col="createdHour")
+    #     #     self.user_preference[user_id] = self.normalize_interaction(history)
+        
+    #     for user_id in user_list:
+    #         history = pd.read_csv(f"../Result/MISP/Relation_fix/DIM_{EMB_DIM}/{user_id}.csv", index_col="createdHour")
+    #         self.user_preference[user_id] = self.normalize_interaction(history)
     
     
 
@@ -158,7 +173,8 @@ class QLearn(MISP):
             self.default_count += 1
             return self.default_recommend(self.user_preference[userID], userID, charging_len)
 
-        score_max_recommend = max(combinations, key=lambda x: x[2])
+        # score_max_recommend = max(combinations, key=lambda x: x[2])
+        score_max_recommend = random.choice(combinations)
         q_learning_recommend, q_index = self.get_q_learning_recommend(userID, combinations, q_table)
 
         return q_learning_recommend, q_index, score_max_recommend
@@ -203,8 +219,13 @@ class QLearn(MISP):
         # recommend_hour = int(preference_df.idxmax()[recommend_cs])
 
         max_index = preference_df.stack().idxmax()
-        recommend_cs, recommend_hour = max_index
-       
+        print("+++++++++")
+        print("max_index: ", max_index)
+        print("+++++++++")
+        recommend_hour, recommend_cs = max_index
+        recommend_hour = int(recommend_hour)
+        recommend_cs = str(recommend_cs)
+
         preference_np = preference_df.to_numpy() 
         check = 0
         while check < (20*24):
@@ -220,8 +241,14 @@ class QLearn(MISP):
             # 2. 確認是否和過去 user 喜歡的 facilitType 相同 
             # 3. 建議的時間跟過去 user 喜歡的時間相差不超過兩小時 
             # 4. 確定是否用空位
+            print("========================")
+            print(location_budget)
+            print((all(self.user_history_preference[userID]["facilityType"] == self.location.loc[locationID, "FacilityType"])))
+            print(self.check_createdHour(userID, hour))
+            print(self.get_residual_slots(slots_df, locationID, hour, charging_len) > 0)
+            print("========================")
             if ((location_budget > 0) and 
-                (self.user_history_preference[userID]["facilityType"] == self.location.loc[locationID, "FacilityType"]) and
+                (all(self.user_history_preference[userID]["facilityType"] == self.location.loc[locationID, "FacilityType"])) and
                 (self.check_createdHour(userID, hour)) and
                 (self.get_residual_slots(slots_df, locationID, hour, charging_len) > 0)): 
                 
@@ -234,7 +261,7 @@ class QLearn(MISP):
             preference_np[hour][locationIdx] = -10
 
         personal_origin, personal_willingness, trend, cp_value, threshold = 0, 0, 0, 0, 0
-
+        print(recommend_cs, locationID)
         return (recommend_cs, 
                 recommend_hour, 
                 -1, 
@@ -261,11 +288,15 @@ class QLearn(MISP):
 
 if __name__ == "__main__":
 
-    random_start_counter = 1
-    random_end_counter = 10
+    # random_start_counter = 1
+    # random_end_counter = 5
     # for random_counter in range(random_start_counter, random_end_counter+1):
         
     # print(f"counter = {random_counter}")
+    print(f"ALPHA = {ALPHA}")
+    print(f"EMB_DIM = {EMB_DIM}")
+    print(f"SIGMOID_INCENTIVE_UNIT_COST = {SIGMOID_INCENTIVE_UNIT_COST}")
+    print(f"EPSILON_RATE = {EPSILON_RATE}")
 
     start = time.time()
     agent = EpsilonGreedy(epsilon=EPSILON_RATE)
@@ -274,6 +305,7 @@ if __name__ == "__main__":
     user_behavior = UserBehavior()
     model.current_date = TESTING_START_DATE
     user_choose_station = defaultdict(lambda: 0)
+
 
     for day in range(7):
 
@@ -329,21 +361,20 @@ if __name__ == "__main__":
                 select_arm_result, reward = agent.select_arm(q_learn_recommend, score_max_recommend)
                 recommend = select_arm_result
 
+                # update Q table     
+                agent.update(q_learn_index, reward)
+                if reward == 1:
+                    agent.updateEpsilon()
+        
+                print("q_value: ", agent.q_table[q_learn_index])
             
-            factor_time = user_behavior.factor_time(recommend[1], userID, model.charging_data, origin_hour)
-            factor_cate = user_behavior.factor_cate(model.location, recommend[0], userID, origin_cs)
+            factor_time = user_behavior.factor_time(recommend[1], userID, model.charging_data)
+            factor_cate = user_behavior.factor_cate(model.location, recommend[0], userID)
             factor_dist = user_behavior.factor_dist(model.location, model.charging_data, recommend[0], userID, TESTING_START_DATE)
             print("factor_time, factor_cate,  factor_dist: ", factor_time, factor_cate, factor_dist)
             dissimilarity = user_behavior.get_dissimilarity(factor_time, factor_cate, factor_dist)
             prob = user_behavior.estimate_willingeness(dissimilarity, model.incentive_cost.index(recommend[3]), SIGMOID_INCENTIVE_UNIT_COST)
             user_accept = user_behavior.get_user_decision(prob)
-            reward = 1 if user_accept else 0
-            # update Q table     
-            agent.update(q_learn_index, reward)
-            if reward == 1:
-                agent.updateEpsilon()
-    
-            print("q_value: ", agent.q_table[q_learn_index])
             print(prob, user_accept)
 
             user_choose = recommend if user_accept else model.get_user_origin_choose(slots_df, origin_cs, origin_hour, charging_len)
@@ -383,7 +414,9 @@ if __name__ == "__main__":
             print(item, "-", model.location.loc[item, "buildingID"], ":", user_choose_station[item])
 
 
-        path = PATH
+        path = f"../Result/Carl/MISP/{TESTING_NAME}/SIGMOID_INCENTIVE_UNIT_COST_{SIGMOID_INCENTIVE_UNIT_COST}/EPSILON_RATE_{EPSILON_RATE}/{TEST_DAY}/alpha_{ALPHA}/"
+        # path = f"../Result/Carl/MF/{TESTING_NAME}/SIGMOID_INCENTIVE_UNIT_COST_{SIGMOID_INCENTIVE_UNIT_COST}/DIM_{EMB_DIM}/{TEST_DAY}/alpha_{ALPHA}/"
+
         if not os.path.isdir(path):
             os.makedirs(path)
 
@@ -397,10 +430,14 @@ if __name__ == "__main__":
         model.update_average_request_num(model.current_date, user_choose_station)
 
 
-        file_path = FILE_PATH
-        os.makedirs(os.path.dirname(file_path), exist_ok=True)
-        with open(FILE_PATH, 'w') as json_file:
-                json.dump(agent.q_table, json_file)
+    # file_path = f'../Result/Carl/MISP/{TESTING_NAME}/SIGMOID_INCENTIVE_UNIT_COST_{SIGMOID_INCENTIVE_UNIT_COST}/{TEST_DAY}/{random_counter}/q_table.json'
+    file_path = f'../Result/Carl/MISP/{TESTING_NAME}/SIGMOID_INCENTIVE_UNIT_COST_{SIGMOID_INCENTIVE_UNIT_COST}/EPSILON_RATE_{EPSILON_RATE}/{TEST_DAY}/q_table.json'
+    # file_path = f'../Result/Carl/MF/{TESTING_NAME}/SIGMOID_INCENTIVE_UNIT_COST_{SIGMOID_INCENTIVE_UNIT_COST}/DIM_{EMB_DIM}/{TEST_DAY}/q_table.json'
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    # with open(f'../Result/Carl/MISP/{TESTING_NAME}/SIGMOID_INCENTIVE_UNIT_COST_{SIGMOID_INCENTIVE_UNIT_COST}/{TEST_DAY}/{random_counter}/q_table.json', 'w') as json_file:
+    #         json.dump(agent.q_table, json_file)
+    with open(file_path, 'w') as json_file:
+        json.dump(agent.q_table, json_file)
 
     end = time.time()
     print(f"Time: {(end-start)/60} min")

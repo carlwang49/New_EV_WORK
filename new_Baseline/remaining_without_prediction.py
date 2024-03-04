@@ -7,8 +7,8 @@ from collections import defaultdict
 from base import base
 from UserBehavior import UserBehavior
 
-TESTING_NAME = "REMAIN_userBehavior_without_prediction_maxSlots_10"
-TEST_DAY = "2024-03-03"
+TESTING_NAME = "REMAIN_userBehavior_without_prediction_maxSlots_10_newBehavior"
+TEST_DAY = "2024-03-04"
 SIGMOID_INCENTIVE_UNIT = 0.2
 
 TESTING_START_DATE = parser.parse("2018-07-01")

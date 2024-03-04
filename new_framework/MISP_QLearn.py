@@ -1,31 +1,30 @@
+'''
+1. All accept
+2. 刪掉 DP
+'''
 import os
 import json
-import time
 import pandas as pd
 import numpy as np
 from datetime import timedelta
 from dateutil import parser
 from collections import defaultdict
+import time
+from collections import defaultdict
 from EpsilonGreedy import EpsilonGreedy
-from MISP_EL_incentive_025_cost_01_sigmoid import MISP
-from UserBehavior import UserBehavior
+from MISP import MISP
 
 ### global variable ###
-ALPHA = 0.2
-TESTING_NAME = "MISP_QLearn_EL_random_Origin_newBehavior"
-TEST_DAY = "2024-03-04"
+ALPHA = 0.5
+TESTING_NAME = "MISP_QLearn_output"
+TEST_DAY = "2023-07-06"
 
-SIGMOID_INCENTIVE_UNIT_COST = 0.15
-INCENTIVE_UNIT = 0.25
-COST_UNIT = 0.1
-
+INCENTIVE_BUDGET = 400
 TESTING_START_DATE = parser.parse("2018-07-01")
 TESTING_END_DATE = parser.parse("2018-07-08")
 
 EPSILON_RATE = 0.5
 
-PATH = f"../NewResult/Carl/{TESTING_NAME}/SIGMOID_INCENTIVE_UNIT_COST_{SIGMOID_INCENTIVE_UNIT_COST}/{TEST_DAY}/alpha_{ALPHA}/"
-FILE_PATH = f'../NewResult/Carl/{TESTING_NAME}/SIGMOID_INCENTIVE_UNIT_COST_{SIGMOID_INCENTIVE_UNIT_COST}/{TEST_DAY}/q_table.json'
 
 class QLearn(MISP):
 
@@ -34,31 +33,7 @@ class QLearn(MISP):
         super().__init__()
         self.user_facility_perc_dic = pd.read_json("../Dataset/user_facility_perc_dic.json").to_dict()
         print(f"ALPHA = {ALPHA}")
-    
-    
 
-    def expected_score(self, user_list, userID, csID, hour, incentive_num):
-        '''
-        計算每個充電選項對系統的期望分數
-        user_list: 所有使用者 ID
-        userID: 要排程的那個使用者 ID
-        csID: 選項中的充電站 ID
-        hour: 選項中的充電開始時間
-        incentive: 選項中獎勵的數量
-        ALPHA = __
-        '''
-        personal_willingness, personal_origin = self.personal_willingness(userID, csID, hour, incentive_num)
-        trend = self.trend_willingness(user_list, userID, csID, hour)
-        
-        ### (該時刻的總平均使用率 - (cs, t)使用率) / (cs, t)最大使用率 ###
-        load_value = self.average_utilization_ratio[hour] - self.load_matrix[int(self.location.loc[csID, "buildingID"])][hour]
-        load_value = load_value / self.average_utilization_ratio.max() if self.average_utilization_ratio.max() != 0 else 1
-
-        score = (((ALPHA * personal_willingness) + ((1 - ALPHA) * trend)) * load_value)
-        cp_value = score/self.incentive_cost[incentive_num]
-
-        return score, personal_willingness, personal_origin, trend, cp_value
-    
 
     def get_user_most_preference_hour(self, userID):
         
@@ -68,7 +43,7 @@ class QLearn(MISP):
         user_most_preference_hour = user_history_charging_data['createdHour'].mode()[0]
 
         return user_most_preference_hour
-    
+
 
     def find_min_diff(self, dp_time, history_preference_time):
         '''
@@ -78,7 +53,6 @@ class QLearn(MISP):
                    abs(history_preference_time - dp_time + 24))
 
         return diff
-
 
     def convert_percentage(self, num):
         '''
@@ -94,8 +68,7 @@ class QLearn(MISP):
             return "80%"
         else:
             return "100%"
-
-
+    
     def get_q_table_index_option_list(self, userID, combinations):
         '''
         option 轉換成 Q_table 對應的 index
@@ -117,7 +90,7 @@ class QLearn(MISP):
             # tup[:3] 前三個 elements 去對應 q-table index
 
         return q_table_index_option_list
-    
+
 
     def filter_q_value(self, q_table_list):
         '''
@@ -136,8 +109,7 @@ class QLearn(MISP):
                         index_option_dict[str(key)] = value
 
         return index_option_dict
-    
-    
+
 
     def OGAP_QLearn(self, user_list, slots_df, userID, charging_len, q_table):
         '''
@@ -149,22 +121,21 @@ class QLearn(MISP):
         combinations = self.get_all_combinations(user_list, slots_df, userID, charging_len)
         if len(combinations) == 0:
             self.default_count += 1
-            return self.default_recommend(self.user_preference[userID], userID, charging_len)
+            return self.default_recommend(self.user_preference[userID], userID, charging_len, slots_df)
         self.threshold = self.set_threshold(combinations, self.current_date) 
         combinations = self.initial_filter(combinations)
         
         ### 全部的組合都被篩選掉時給 default 
         if len(combinations) == 0:
             self.default_count += 1
-            return self.default_recommend(self.user_preference[userID], userID, charging_len)
+            return self.default_recommend(self.user_preference[userID], userID, charging_len, slots_df)
 
         score_max_recommend = max(combinations, key=lambda x: x[2])
         q_learning_recommend, q_index = self.get_q_learning_recommend(userID, combinations, q_table)
 
         return q_learning_recommend, q_index, score_max_recommend
-
-
-
+    
+    
     def get_q_learning_recommend(self, userID, combinations, q_table):
         
         q_table_index_option_list = self.get_q_table_index_option_list(userID, combinations)
@@ -191,20 +162,17 @@ class QLearn(MISP):
         
         return q_learning_recommend, q_index
 
-
-    def default_recommend(self, preference_df, userID, charging_len):
+    
+    def default_recommend(self, preference_df, userID, charging_len, slots_df):
         '''
         預設推薦
         preference_df: 預測的使用者偏好 (userID 對每一個充電站每個時段的偏好)
         userID: 要排程的那個使用者 ID
         charging_len: 使用者充電時間長度
         '''
-        # recommend_cs = str(preference_df.idxmax().idxmax())
-        # recommend_hour = int(preference_df.idxmax()[recommend_cs])
-
-        max_index = preference_df.stack().idxmax()
-        recommend_cs, recommend_hour = max_index
-       
+        recommend_cs = str(preference_df.idxmax().idxmax())
+        recommend_hour = int(preference_df.idxmax()[recommend_cs])
+        
         preference_np = preference_df.to_numpy() 
         check = 0
         while check < (20*24):
@@ -216,8 +184,8 @@ class QLearn(MISP):
             location_budget = self.budget[locationID]
             charging_len = int(charging_len)
 
-            # 1. 確認 budget 至少一張
-            # 2. 確認是否和過去 user 喜歡的 facilitType 相同 
+            # 1. 確認 budget 還夠 
+            # 2. 使否和過去 user 喜歡的 facilitType 相同 
             # 3. 建議的時間跟過去 user 喜歡的時間相差不超過兩小時 
             # 4. 確定是否用空位
             if ((location_budget > 0) and 
@@ -233,46 +201,19 @@ class QLearn(MISP):
             check += 1
             preference_np[hour][locationIdx] = -10
 
-        personal_origin, personal_willingness, trend, cp_value, threshold = 0, 0, 0, 0, 0
+        # 後面的兩個 0 是為了用來判斷是否為 qlearn 的結果
+        return (recommend_cs, recommend_hour, -1, 0.12, 0, 0), 0, 0
 
-        return (recommend_cs, 
-                recommend_hour, 
-                -1, 
-                round(1 * COST_UNIT + 0.1, 1), 
-                personal_origin, 
-                personal_willingness, 
-                trend, 
-                cp_value, 
-                threshold
-                ), 0 , 0
     
 
-    def get_user_origin_choose(self, slots_df, origin_cs, origin_hour, charging_len):
-        
-        hour = origin_hour
-        for _ in range(24):
-            hour %= 24
-            parking_slots = self.get_residual_slots(slots_df, origin_cs, hour, charging_len)
-            if parking_slots > 0:
-                return (origin_cs, hour, -1, 0.1, 0, 0, 0, 0, 0)
-            hour += 1
-
-
-
 if __name__ == "__main__":
-
-    random_start_counter = 1
-    random_end_counter = 10
-    # for random_counter in range(random_start_counter, random_end_counter+1):
-        
-    # print(f"counter = {random_counter}")
 
     start = time.time()
     agent = EpsilonGreedy(epsilon=EPSILON_RATE)
     agent.initialize()
     model = QLearn()
-    user_behavior = UserBehavior()
-    model.current_date = TESTING_START_DATE
+    
+    model.current_date = TESTING_START_DATE # 測試開始時間，可以自行調整
     user_choose_station = defaultdict(lambda: 0)
 
     for day in range(7):
@@ -301,7 +242,7 @@ if __name__ == "__main__":
             "requestID", 
             "userID", 
             "datetime", 
-            "locationID", 
+            "locationID",
             "chargingLen", 
             "score", 
             "incentive", 
@@ -309,64 +250,44 @@ if __name__ == "__main__":
             "originHour",
             "personal",
             "willingness",
-            "trend",
-            "cp_value",
-            "threshold",
-            "user_accept"
         ]
 
         schedule_df = pd.DataFrame([], columns=columns)
-        for requestID, userID, charging_len, origin_hour, origin_cs in charging_request:
+        for rID, userID, charging_len, origin_hour, origin_cs in charging_request:
             
-            # try:
+            # try: 
             q_learn_recommend, q_learn_index, score_max_recommend =\
                     model.OGAP_QLearn(user_list, slots_df, userID, int(charging_len), agent.q_table)
             
             if q_learn_index == 0:
-                recommend = q_learn_recommend
-            
+                # 為 default recommend
+                user_choose = q_learn_recommend
             else:
                 select_arm_result, reward = agent.select_arm(q_learn_recommend, score_max_recommend)
-                recommend = select_arm_result
+                user_choose = select_arm_result
 
-            
-            factor_time = user_behavior.factor_time(recommend[1], userID, model.charging_data, origin_hour)
-            factor_cate = user_behavior.factor_cate(model.location, recommend[0], userID, origin_cs)
-            factor_dist = user_behavior.factor_dist(model.location, model.charging_data, recommend[0], userID, TESTING_START_DATE)
-            print("factor_time, factor_cate,  factor_dist: ", factor_time, factor_cate, factor_dist)
-            dissimilarity = user_behavior.get_dissimilarity(factor_time, factor_cate, factor_dist)
-            prob = user_behavior.estimate_willingeness(dissimilarity, model.incentive_cost.index(recommend[3]), SIGMOID_INCENTIVE_UNIT_COST)
-            user_accept = user_behavior.get_user_decision(prob)
-            reward = 1 if user_accept else 0
-            # update Q table     
-            agent.update(q_learn_index, reward)
-            if reward == 1:
-                agent.updateEpsilon()
-    
-            print("q_value: ", agent.q_table[q_learn_index])
-            print(prob, user_accept)
+                # update Q table     
+                agent.update(q_learn_index, reward)
+                if reward == 1:
+                    agent.updateEpsilon()
+                print("q_value: ", agent.q_table[q_learn_index])
 
-            user_choose = recommend if user_accept else model.get_user_origin_choose(slots_df, origin_cs, origin_hour, charging_len)
-            incentive_nums = model.incentive_cost.index(user_choose[3]) if user_accept else 0
+            incentive_nums = model.incentive_cost.index(user_choose[3]) if reward else 0
             user_choose_station[user_choose[0]] += 1
             print("user_choose=", user_choose)
             
             schedule_df.loc[len(schedule_df)] = [
-                requestID, # requestID
-                userID, # userID
-                model.current_date + timedelta(hours=user_choose[1]), # datetime
-                user_choose[0], # locationID
-                charging_len, # chargingLen
-                user_choose[2], # score
-                model.incentive_cost.index(user_choose[3]), # incentive
-                origin_cs, # originLocationID
-                origin_hour, # originHour
-                user_choose[4], # personal
-                user_choose[5], # willingness
-                user_choose[6], # trend
-                user_choose[7], # cp_value
-                user_choose[8], # threshold
-                user_accept
+                rID,
+                userID,
+                model.current_date + timedelta(hours=user_choose[1]),
+                user_choose[0],
+                charging_len,
+                user_choose[2],
+                incentive_nums,
+                origin_cs,
+                origin_hour,
+                user_choose[4],
+                user_choose[5]
             ]
 
             slots_df = model.update_user_selection(slots_df, model.current_date, user_choose, charging_len)
@@ -376,14 +297,13 @@ if __name__ == "__main__":
 
             # except Exception as e:
             #     print(f"{userID}, {charging_len}, {origin_hour}, {origin_cs} ERROR: {e}")
-
             progress += 1
 
         for item in user_choose_station.keys():
             print(item, "-", model.location.loc[item, "buildingID"], ":", user_choose_station[item])
 
+        path = f"../Result/Carl/MISP/{TESTING_NAME}/{TEST_DAY}/alpha_{ALPHA}/"
 
-        path = PATH
         if not os.path.isdir(path):
             os.makedirs(path)
 
@@ -396,11 +316,11 @@ if __name__ == "__main__":
         # update average request number
         model.update_average_request_num(model.current_date, user_choose_station)
 
+    file_path = f'../Result/Carl/MISP/{TESTING_NAME}/alpha_{ALPHA}/q_table.json'
 
-        file_path = FILE_PATH
-        os.makedirs(os.path.dirname(file_path), exist_ok=True)
-        with open(FILE_PATH, 'w') as json_file:
-                json.dump(agent.q_table, json_file)
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    with open(f'../Result/Carl/MISP/{TESTING_NAME}/alpha_{ALPHA}/q_table.json', 'w') as json_file:
+        json.dump(agent.q_table, json_file)
 
     end = time.time()
     print(f"Time: {(end-start)/60} min")

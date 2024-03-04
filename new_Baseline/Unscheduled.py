@@ -9,7 +9,7 @@ from base import base
 from UserBehavior import UserBehavior
 
 TESTING_NAME = "unscheduled_userBehavior_without_prediction_maxSlots_10"
-TEST_DAY = "2024-02-29"
+TEST_DAY = "2024-03-04"
 
 TESTING_START_DATE = parser.parse("2018-07-01")
 TESTING_END_DATE = parser.parse("2018-07-08")

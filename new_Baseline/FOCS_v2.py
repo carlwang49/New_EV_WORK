@@ -19,8 +19,8 @@ from collections import defaultdict, deque
 from UserBehavior import UserBehavior
 from base import base
 
-TESTING_NAME = "FOCS_v2_new"
-TEST_DAY = "2024-03-03"
+TESTING_NAME = "FOCS_v2_newBehavior"
+TEST_DAY = "2024-03-04"
 SIGMOID_INCENTIVE_UNIT = 0.2
 INCENTIVE_NUMS = 0
 

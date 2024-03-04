@@ -8,25 +8,16 @@ import time
 from datetime import timedelta
 from dateutil import parser
 from collections import defaultdict
-from MISP_incentive_025_cost_01_sigmoid import MISP
-from UserBehavior import UserBehavior
-import random
+from MISP import MISP
 
 ### global variable ###
-ALPHA = 0.2
-TESTING_NAME = "MISP_EL_random_Origin_newBehavior"
-TEST_DAY = "2024-03-04"
-
-SIGMOID_INCENTIVE_UNIT_COST = 0.25
-INCENTIVE_UNIT = 0.25
-COST_UNIT = 0.1
-COUPON = 3
+ALPHA = 0.5
+TESTING_NAME = "MISP_EL_output"
+TEST_DAY = "2023-07-05"
 
 INCENTIVE_BUDGET = 400
 TESTING_START_DATE = parser.parse("2018-07-01")
 TESTING_END_DATE = parser.parse("2018-07-08")
-
-PATH = f"../NewResult/Carl/{TESTING_NAME}/SIGMOID_INCENTIVE_UNIT_COST_{SIGMOID_INCENTIVE_UNIT_COST}/{TEST_DAY}/alpha_{ALPHA}/"
 
 
 class MISP_EL(MISP):
@@ -36,29 +27,6 @@ class MISP_EL(MISP):
         super().__init__()
         self.charging_csID_avg_request_nums = None
         self.set_charging_csID_avg_request_nums()
- 
-    
-    def expected_score(self, user_list, userID, csID, hour, incentive_num):
-        '''
-        計算每個充電選項對系統的"期望分數"
-        user_list: 所有使用者 ID
-        userID: 要排程的那個使用者 ID
-        csID: 選項中的充電站 ID
-        hour: 選項中的充電開始時間
-        incentive: 選項中獎勵的數量
-        '''
-        personal_willingness, personal_origin = self.personal_willingness(userID, csID, hour, incentive_num)
-        trend = self.trend_willingness(user_list, userID, csID, hour)
-        
-        ### (該時刻的總平均使用率 - (cs, t)使用率) / (cs, t)最大使用率 ###
-        load_value = self.average_utilization_ratio[hour] - self.load_matrix[int(self.location.loc[csID, "buildingID"])][hour]
-        load_value = load_value / self.average_utilization_ratio.max() if self.average_utilization_ratio.max() != 0 else 1
-        
-        score = (((ALPHA * personal_willingness) + ((1 - ALPHA) * trend)) * load_value)
-        cp_value = score/self.incentive_cost[incentive_num]
-    
-        return score, personal_willingness, personal_origin, trend, cp_value
-
        
        
     def set_charging_csID_avg_request_nums(self):
@@ -91,30 +59,22 @@ class MISP_EL(MISP):
 
                 Ni = self.charging_csID_avg_request_nums.loc[self.charging_csID_avg_request_nums['locationId'] == csID, 
                                                               'average_daily_request_count'].values[0]
-                # coupon = min(max(round(self.budget[csID] / Ni), 1), 10)
-                coupon = random.randint(1, 10)
-                # coupon = COUPON
+                coupon = min(max(round(self.budget[csID] / Ni), 1), 10)
+                # coupon = 3
                 if coupon > self.budget[csID]:
                     continue
                 
-                score, personal_willingness, personal_origin, trend, cp_value = self.expected_score(user_list, userID, csID, hour, coupon)
+                score, personal_willingness, personal_origin = self.expected_score(user_list, userID, csID, hour, coupon)
                 schedule_cost = self.incentive_cost[coupon]
-                combinations.append((csID, hour, score, schedule_cost, personal_origin, personal_willingness, trend, cp_value))
+                combinations.append((csID, hour, score, schedule_cost, personal_origin, personal_willingness))
         
         return combinations 
 
 
 if __name__ == "__main__":
-    
-    random_start_counter = 1
-    random_end_counter = 10
-    
-    # for random_counter in range(random_start_counter, random_end_counter+1):
         
-    # print(f"counter = {random_counter}")
     start = time.time()
     model = MISP_EL()
-    user_behavior = UserBehavior()
     model.current_date = TESTING_START_DATE
     user_choose_station = defaultdict(lambda: 0)
 
@@ -152,9 +112,6 @@ if __name__ == "__main__":
             "originHour",
             "personal",
             "willingness",
-            "cp_value",
-            "threshold",
-            "user_accept"
         ]
 
         schedule_df = pd.DataFrame([], columns=columns)
@@ -162,21 +119,8 @@ if __name__ == "__main__":
         for requestID, userID, charging_len, origin_hour, origin_cs in charging_request:
             
             # try:
-            recommend = model.OGAP(user_list, slots_df, userID, charging_len)
-
-            factor_time = user_behavior.factor_time(recommend[1], userID, model.charging_data, origin_hour)
-            factor_cate = user_behavior.factor_cate(model.location, recommend[0], userID, origin_cs)
-            factor_dist = user_behavior.factor_dist(model.location, model.charging_data, recommend[0], userID, TESTING_START_DATE)
-            print("factor_time, factor_cate,  factor_dist: ", factor_time, factor_cate, factor_dist)
-            dissimilarity = user_behavior.get_dissimilarity(factor_time, factor_cate, factor_dist)
-            prob = user_behavior.estimate_willingeness(dissimilarity, model.incentive_cost.index(recommend[3]), SIGMOID_INCENTIVE_UNIT_COST)
-            user_accept = user_behavior.get_user_decision(prob)
-            print(prob, user_accept)
-
-            user_choose = recommend if user_accept else model.get_user_origin_choose(slots_df, origin_cs, origin_hour, charging_len)
-            incentive_nums = model.incentive_cost.index(user_choose[3]) if user_accept else 0
+            user_choose = model.OGAP(user_list, slots_df, userID, charging_len) 
             user_choose_station[user_choose[0]] += 1
-
             print("user_choose =", user_choose)
 
             schedule_df.loc[len(schedule_df)] = [
@@ -191,10 +135,7 @@ if __name__ == "__main__":
                 origin_cs,
                 origin_hour,
                 user_choose[4],
-                user_choose[5],
-                user_choose[7], # cp_value
-                user_choose[8], # threshold
-                user_accept
+                user_choose[5]
             ]
             
             slots_df = model.update_user_selection(slots_df, model.current_date, user_choose, charging_len)
@@ -211,7 +152,8 @@ if __name__ == "__main__":
         for item in user_choose_station.keys():
             print(item, "-", model.location.loc[item, "buildingID"], ":", user_choose_station[item])
 
-        path = PATH
+        path = f"../Result/Carl/MISP/{TESTING_NAME}/{TEST_DAY}/alpha_{ALPHA}/"
+
         if not os.path.isdir(path):
             os.makedirs(path)
 

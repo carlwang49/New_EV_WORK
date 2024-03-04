@@ -7,8 +7,8 @@ from dateutil import parser
 from collections import defaultdict, deque
 from base import base
 
-TESTING_NAME = "LLF_RR_v2_userBehavior_without_prediction"
-TEST_DAY = "2024-03-03"
+TESTING_NAME = "LLF_RR_v2_userBehavior_without_prediction_newBehavior"
+TEST_DAY = "2024-03-04"
 SIGMOID_INCENTIVE_UNIT = 0.2
 
 TESTING_START_DATE = parser.parse("2018-07-01")
