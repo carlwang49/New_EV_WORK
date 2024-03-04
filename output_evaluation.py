@@ -41,12 +41,13 @@ if __name__ == '__main__':
 
     schedule_df = pd.DataFrame([], columns=columns)
     user_accept_schedule_df = pd.DataFrame([], columns=columns)
+    schedule_df["datetime"] = pd.to_datetime(schedule_df["datetime"])
 
     testing_start_time = evaluate.charging_start_time
 
     null_value = 0
     count = 0
-    PATH = "Result/Carl/MF/MISMF_QLearn_incentive_025_cost_01_s02_e02/SIGMOID_INCENTIVE_UNIT_COST_0.2/DIM_10/2023-07-15/alpha_0.2"
+    PATH = "NewResult/Carl/MISP_QLearn_EL_random_Origin/SIGMOID_INCENTIVE_UNIT_COST_0.25/2024-03-04/alpha_0.2"
     for day in range(7):
 
         charging_request = evaluate.get_charging_request(evaluate.charging_data, testing_start_time)
@@ -94,7 +95,8 @@ if __name__ == '__main__':
                 null_value += 1
 
         testing_start_time += timedelta(days=1)
-
+        
+    user_accept_schedule_df["datetime"] = pd.to_datetime(user_accept_schedule_df["datetime"])
     total_incentive = schedule_df['incentive'].sum()
     incentive_cost = round(total_incentive/20, 4)
     print("miss_value:", null_value)

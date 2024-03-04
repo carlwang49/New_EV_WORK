@@ -12,10 +12,10 @@ from UserBehavior import UserBehavior
 
 ### global variable ###
 ALPHA = 0.2
-TESTING_NAME = "MISP_QLearn_EL_random_new"
-TEST_DAY = "2024-03-03"
+TESTING_NAME = "MISP_QLearn_EL_random_Origin"
+TEST_DAY = "2024-03-04"
 
-SIGMOID_INCENTIVE_UNIT_COST = 0.15
+SIGMOID_INCENTIVE_UNIT_COST = 0.25
 INCENTIVE_UNIT = 0.25
 COST_UNIT = 0.1
 
@@ -329,20 +329,21 @@ if __name__ == "__main__":
                 select_arm_result, reward = agent.select_arm(q_learn_recommend, score_max_recommend)
                 recommend = select_arm_result
 
-                # update Q table     
-                agent.update(q_learn_index, reward)
-                if reward == 1:
-                    agent.updateEpsilon()
-        
-                print("q_value: ", agent.q_table[q_learn_index])
             
-            factor_time = user_behavior.factor_time(recommend[1], userID, model.charging_data, origin_hour)
-            factor_cate = user_behavior.factor_cate(model.location, recommend[0], userID, origin_cs)
+            factor_time = user_behavior.factor_time(recommend[1], userID, model.charging_data)
+            factor_cate = user_behavior.factor_cate(model.location, recommend[0], userID)
             factor_dist = user_behavior.factor_dist(model.location, model.charging_data, recommend[0], userID, TESTING_START_DATE)
             print("factor_time, factor_cate,  factor_dist: ", factor_time, factor_cate, factor_dist)
             dissimilarity = user_behavior.get_dissimilarity(factor_time, factor_cate, factor_dist)
             prob = user_behavior.estimate_willingeness(dissimilarity, model.incentive_cost.index(recommend[3]), SIGMOID_INCENTIVE_UNIT_COST)
             user_accept = user_behavior.get_user_decision(prob)
+            reward = 1 if user_accept else 0
+            # update Q table     
+            agent.update(q_learn_index, reward)
+            if reward == 1:
+                agent.updateEpsilon()
+    
+            print("q_value: ", agent.q_table[q_learn_index])
             print(prob, user_accept)
 
             user_choose = recommend if user_accept else model.get_user_origin_choose(slots_df, origin_cs, origin_hour, charging_len)

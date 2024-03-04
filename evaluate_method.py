@@ -11,9 +11,9 @@ from dateutil import parser
 from collections import defaultdict
 
 TEST_NAME = input("Enter the test name: ")
-FLAG = True # True if Baseline
+FLAG = False # True if Baseline
 BASELINE_PATH = "./NewResult/Baseline/SCOMMIT_v2_test/2024-02-29/SIGMOID_INCENTIVE_UNIT_0.2/"
-PATH = "./NewResult/Baseline/unscheduled_userBehavior_without_prediction_maxSlots_10/2024-02-29/"
+PATH = "./Result/Carl/MISP/MISP_QLearn_incentive_025_cost_01_s015_emb_210/SIGMOID_INCENTIVE_UNIT_COST_0.15/DIM_210/2023-07-13/alpha_0.2/"
 
 sns.set()
 sns.set_style('whitegrid')
@@ -598,7 +598,7 @@ if __name__ == '__main__':
         print(f"favor ratio: {round(sum(favor_count)/len(favor_count), 4)}")
 
 
-    exit(0)
+    # exit(0)
     ################################################################################################################################################
     ################################################################################################################################################
     ################################################################################################################################################
